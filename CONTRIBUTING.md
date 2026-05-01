@@ -14,10 +14,12 @@ Contributions should make the landscape easier to compare, not just add more lin
    - `landscape/memory-infrastructure.md`
    - `landscape/protocols-and-connectors.md`
    - `landscape/team-knowledge-memory.md`
+   - For universal memory layers, use `templates/category-universal-memory-layer.md` and place the system in the closest landscape category until a dedicated landscape page is needed.
 2. Copy `templates/system-profile.md` into `systems/<system-name>.md`.
-3. Fill the profile with source-backed research.
-4. Add the system to the relevant landscape page.
-5. If the system is especially important, add it to the starter table in `README.md`.
+3. Copy the relevant category-specific section from `templates/category-*.md` into the same system profile.
+4. Fill the common and category-specific fields with source-backed research.
+5. Add the system to the relevant landscape page.
+6. If the system is especially important, add it to the starter table in `README.md`.
 
 ## Profile Quality Bar
 
@@ -31,6 +33,8 @@ Every system profile should answer these core questions:
 - How portable is the memory?
 - What are the system's strengths and limitations?
 - How does it relate to Membase or the broader universal memory layer pattern?
+
+Every system profile should also answer the category-specific questions for its category. For example, coding agents need repo-context and instruction-system analysis, while frontier platforms need account/workspace/project memory analysis.
 
 ## Sources
 

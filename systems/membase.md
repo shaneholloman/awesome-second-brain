@@ -96,6 +96,10 @@ Membase represents the universal memory layer pattern: memory that is not locked
 
 This is the reference profile for Membase itself. It should be kept factual and updated as the product evolves.
 
+## Category-Specific Analysis
+
+Use [../templates/category-universal-memory-layer.md](../templates/category-universal-memory-layer.md) when completing this profile.
+
 ## Sources
 
 - [Membase](https://membase.so/)

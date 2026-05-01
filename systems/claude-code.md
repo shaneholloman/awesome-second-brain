@@ -76,6 +76,10 @@ TBD.
 
 TBD.
 
+## Category-Specific Analysis
+
+Use [../templates/category-coding-agent.md](../templates/category-coding-agent.md) when completing this profile.
+
 ## Sources
 
 - TBD

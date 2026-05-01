@@ -41,7 +41,7 @@ This repo tracks that landscape so builders, researchers, and teams can compare 
 
 ## Comparison Axes
 
-Use these axes when comparing systems:
+Use these common axes when comparing every system:
 
 | Axis | Key question |
 |---|---|
@@ -51,6 +51,19 @@ Use these axes when comparing systems:
 | Human-facing vs agent-facing | Is the system mainly for people to read, or for agents to call, search, and update? |
 | Transparent vs opaque | Can users inspect and control what is remembered? |
 | Local vs cloud | Where does the memory live, and what are the privacy and deployment tradeoffs? |
+
+Each category also has its own comparison axes. Use the common system profile first, then add the relevant category-specific template:
+
+| Category | Category-specific template |
+|---|---|
+| Universal Memory Layers | [templates/category-universal-memory-layer.md](templates/category-universal-memory-layer.md) |
+| Frontier AI Platforms | [templates/category-frontier-platform.md](templates/category-frontier-platform.md) |
+| Coding Agents & Developer Harnesses | [templates/category-coding-agent.md](templates/category-coding-agent.md) |
+| Local Agent Harnesses | [templates/category-local-agent-harness.md](templates/category-local-agent-harness.md) |
+| Personal / Local Memory Systems | [templates/category-personal-memory.md](templates/category-personal-memory.md) |
+| Memory Infrastructure & SDKs | [templates/category-memory-infra.md](templates/category-memory-infra.md) |
+| Protocols & Connectors | [templates/category-protocol-connector.md](templates/category-protocol-connector.md) |
+| Team / Enterprise Knowledge Memory | [templates/category-team-knowledge.md](templates/category-team-knowledge.md) |
 
 ## Starter System Profiles
 
@@ -65,7 +78,7 @@ These starter files show the intended structure. They are not complete market re
 
 ## Research Template
 
-Use [templates/system-profile.md](templates/system-profile.md) for every system profile.
+Use [templates/system-profile.md](templates/system-profile.md) for every system profile. Then add the category-specific analysis section from the relevant template.
 
 The most important fields are:
 
@@ -78,7 +91,7 @@ The most important fields are:
 - Relationship to Membase
 - Sources
 
-The goal is not to write marketing copy. The goal is to make every system comparable under the same questions.
+The goal is not to write marketing copy. The goal is to make every system comparable under the same common questions while preserving the details that only matter inside each category.
 
 ## The Universal Memory Layer Gap
 
@@ -101,8 +114,9 @@ In this repo, Membase is analyzed as one system in the broader landscape and als
 
 1. Pick a system from one of the landscape categories.
 2. Copy [templates/system-profile.md](templates/system-profile.md) into `systems/<system-name>.md`.
-3. Fill the profile with source-backed research.
-4. Add the system to the relevant `landscape/*.md` page.
-5. Open a PR with sources and a short explanation of why the system matters.
+3. Add the relevant category-specific analysis section from `templates/category-*.md`.
+4. Fill the profile with source-backed research.
+5. Add the system to the relevant `landscape/*.md` page.
+6. Open a PR with sources and a short explanation of why the system matters.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the contribution guidelines.

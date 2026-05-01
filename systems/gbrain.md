@@ -76,6 +76,10 @@ TBD.
 
 TBD.
 
+## Category-Specific Analysis
+
+Use [../templates/category-personal-memory.md](../templates/category-personal-memory.md) when completing this profile.
+
 ## Sources
 
 - TBD

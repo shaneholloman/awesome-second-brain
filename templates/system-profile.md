@@ -155,6 +155,19 @@ Examples:
 - Shows why portable memory is needed
 - Could use Membase as a backend/shared memory layer
 
+## Category-Specific Analysis
+
+Copy the relevant section from one category template:
+
+- [Frontier AI Platform](category-frontier-platform.md)
+- [Coding Agent / Developer Harness](category-coding-agent.md)
+- [Local Agent Harness](category-local-agent-harness.md)
+- [Personal / Local Memory System](category-personal-memory.md)
+- [Memory Infrastructure / SDK](category-memory-infra.md)
+- [Protocol / Connector](category-protocol-connector.md)
+- [Team / Enterprise Knowledge Memory](category-team-knowledge.md)
+- [Universal Memory Layer](category-universal-memory-layer.md)
+
 ## Sources
 
 - [Source 1](...)

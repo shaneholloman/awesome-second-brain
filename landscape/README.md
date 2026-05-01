@@ -22,3 +22,7 @@ Each category page should explain:
 - Which systems should be researched
 - What questions matter for comparison
 - How the category relates to the broader memory landscape
+
+## Category Templates
+
+Each category has a matching analysis template in [../templates](../templates/README.md). Use those templates when adding system profiles so category-specific comparisons stay consistent.

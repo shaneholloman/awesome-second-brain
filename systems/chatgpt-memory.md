@@ -76,6 +76,10 @@ TBD.
 
 TBD.
 
+## Category-Specific Analysis
+
+Use [../templates/category-frontier-platform.md](../templates/category-frontier-platform.md) when completing this profile.
+
 ## Sources
 
 - TBD
