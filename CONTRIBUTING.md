@@ -1,68 +1,87 @@
-# Contributing to Awesome Context Engineering
+# Contributing to Awesome AI Second Brain
 
-This repo maps AI memory systems, context engineering patterns, and the emerging stack for persistent agent memory.
+This repo compares existing tools and products for building AI-native second brains. Contributions should help a reader decide what to use, how to set it up, and which workflows are actually supported.
 
-Contributions should make the landscape easier to compare, not just add more links.
+## What Counts
 
-## How To Add a System
+Good contributions answer practical questions:
 
-1. Pick the most relevant landscape category:
-   - `landscape/frontier-platforms.md`
-   - `landscape/coding-agents.md`
-   - `landscape/local-agent-harnesses.md`
-   - `landscape/personal-memory-systems.md`
-   - `landscape/memory-infrastructure.md`
-   - `landscape/protocols-and-connectors.md`
-   - `landscape/team-knowledge-memory.md`
-   - For universal memory layers, use `templates/category-universal-memory-layer.md` and place the system in the closest landscape category until a dedicated landscape page is needed.
-2. Copy `templates/system-profile.md` into `systems/<system-name>.md`.
-3. Copy the relevant category-specific section from `templates/category-*.md` into the same system profile.
-4. Fill the common and category-specific fields with source-backed research.
-5. Add the system to the relevant landscape page.
-6. If the system is especially important, add it to the starter table in `README.md`.
+- Where does memory live: local, hosted, self-hosted, or platform-bound?
+- How long does it take to get the first useful memory?
+- What data can it ingest?
+- Does raw data become organized knowledge automatically?
+- Does it support consolidation, reflection, or a dream cycle?
+- Can agents read and write through MCP, API, SDK, CLI, or plugins?
+- Can users separate personal, project, workspace, and team scopes?
+- What can users inspect, edit, delete, export, or audit?
+
+## How To Add a Solution
+
+1. Copy [templates/system-profile.md](templates/system-profile.md) into `solutions/<solution-name>.md`.
+2. If it is a full-profile solution, copy [templates/build-guide.md](templates/build-guide.md) into `setup-guides/<solution-name>.md`.
+3. Add the solution to [solutions/README.md](solutions/README.md), [README.md](README.md), and the relevant comparison tables.
+4. Update capability pages under `capabilities/` only for workflows you can source or verify.
+5. Mark uncertain fields as `Unknown` instead of guessing.
+
+## How To Add a Setup Guide
+
+Setup guides should focus on using existing OSS projects, hosted products, and memory layers. Avoid turning them into from-scratch implementation tutorials.
+
+Every setup guide should include:
+
+- what you are building
+- when to choose or avoid the path
+- prerequisites
+- setup time tagged as `Official`, `Hands-on`, or `Maintainer estimate`
+- install or connection steps
+- data-source setup
+- agent connection
+- verification steps
+- known failure modes
+- sources
 
 ## Profile Quality Bar
 
-Every system profile should answer these core questions:
+Every solution profile should answer:
 
-- What does it remember?
-- What is the memory scope: session, project, user, team, organization, or cross-agent?
-- How is memory written?
-- How is memory retrieved?
-- How much control does the user have?
-- How portable is the memory?
-- What are the system's strengths and limitations?
-- How does it relate to Membase or the broader universal memory layer pattern?
-
-Every system profile should also answer the category-specific questions for its category. For example, coding agents need repo-context and instruction-system analysis, while frontier platforms need account/workspace/project memory analysis.
+- deployment model
+- data capture model
+- auto-organization model
+- consolidation or dreaming model
+- retrieval model
+- agent access surfaces
+- workspace and team support
+- UI and filtering surfaces
+- privacy, control, and portability
+- setup burden
+- relationship to Membase
 
 ## Sources
 
 Use primary sources whenever possible:
 
-- Official docs
-- Official blog posts
-- Product pages
-- GitHub repositories
-- Technical papers
-- Maintainer-written examples
+- official docs
+- official repositories
+- maintainer-written examples
+- product docs and changelogs
+- reproducible local test reports
 
-When primary sources are not enough, secondary sources are allowed, but mark them clearly.
+When using local or internal test reports, summarize them clearly and avoid presenting unverified assumptions as product claims.
 
 ## Writing Style
 
 - Be factual and specific.
-- Avoid hype and vague claims.
-- Prefer comparison-friendly wording.
-- Mention uncertainty with `TBD` instead of guessing.
-- Keep the `Relationship to Membase` section analytical, not promotional.
+- Prefer setup-oriented wording over market-map wording.
+- Distinguish built-in support from integration support and custom collector work.
+- Use the standard support labels from [README.md](README.md).
+- Keep `Relationship to Membase` analytical, not promotional.
 
 ## Pull Request Guidelines
 
-- One system profile per PR is preferred.
-- Include source links in the profile.
-- Explain what category the system belongs to and why.
+- One solution or workflow per PR is preferred.
+- Include sources and verification notes.
 - Keep unrelated formatting changes out of the PR.
+- If a page is a placeholder or watchlist entry, label it clearly as not fully evaluated.
 
 ## License Agreement
 

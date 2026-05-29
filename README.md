@@ -1,8 +1,8 @@
 <div align="center">
 
-# Awesome Context Engineering
+# Awesome AI Second Brain
 
-[![Context Engineering Banner](assets/context-engineering-banner.png)](https://membase.so/?utm_source=github&utm_medium=awesome-context-engineering)
+[![Context Engineering Banner](assets/context-engineering-banner.png)](https://membase.so/?utm_source=github&utm_medium=awesome-second-brain)
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
@@ -14,109 +14,96 @@
 
 </div>
 
-> A living map of AI memory systems, context engineering patterns, and the emerging stack for persistent agent memory.
+> A practical, source-backed guide to choosing and setting up an AI-native second brain.
 
-AI memory is becoming a fragmented stack. ChatGPT remembers you inside ChatGPT. Claude and Gemini have their own personalization layers. Coding agents rely on rules, repo context, local config, and sometimes MCP. Local memory systems build personal brains. Infrastructure products expose memory APIs for developers.
+This repo is for AI power users who want memory that survives across ChatGPT, Claude, Cursor, Codex, local agents, team workflows, and source documents. It compares what each solution actually supports, how hard it is to set up, and how long it takes to get the first useful memory.
 
-This repo tracks that landscape so builders, researchers, and teams can compare how different systems store, retrieve, control, and share memory.
+## Start Here
 
-## What This Repo Is For
-
-- Help our team study AI memory systems with a consistent research template.
-- Help people interested in context engineering understand how the memory market is evolving.
-- Identify the gap between platform-bound memory and portable memory that can work across agents, tools, and teams.
-- Provide a practical index for products, protocols, frameworks, and local systems in the AI memory stack.
-
-## Landscape
-
-| Category | What it covers | Examples |
+| If you want... | Start with | Why |
 |---|---|---|
-| [Frontier AI Platforms](landscape/frontier-platforms.md) | Platform-native memory and personalization inside major AI apps. | ChatGPT, Claude, Gemini |
-| [Coding Agents & Developer Harnesses](landscape/coding-agents.md) | Repo context, rules, instructions, agent sessions, and developer workflows. | Claude Code, Codex, Cursor |
-| [Local Agent Harnesses](landscape/local-agent-harnesses.md) | Local-first agent shells, tool runners, and desktop/CLI harnesses. | OpenCode, OpenClaw, Hermes |
-| [Personal / Local Memory Systems](landscape/personal-memory-systems.md) | Personal knowledge, second-brain tools, local memory, and agent-maintained memory. | Gbrain, Basic Memory, LLM Wiki |
-| [Memory Infrastructure & SDKs](landscape/memory-infrastructure.md) | APIs, SDKs, and frameworks for adding memory to products or agents. | Mem0, Zep, Letta |
-| [Protocols & Connectors](landscape/protocols-and-connectors.md) | Context ingestion, tool connection, and data access layers. | MCP, filesystem, Notion, Slack |
-| [Team / Enterprise Knowledge Memory](landscape/team-knowledge-memory.md) | Organizational knowledge systems, enterprise search, and shared team context. | Glean, Notion AI, Granola |
+| The fastest shared memory across AI agents | [Membase](solutions/membase.md) | Hosted MCP, Memory + Wiki, cross-agent sharing, chat import, and app connectors without operating a local brain stack. |
+| Local or self-hosted control | [OpenHuman](solutions/openhuman.md), [GBrain](solutions/gbrain.md), [Khoj](solutions/khoj.md), or [Obsidian/Logseq + AI bridge](solutions/obsidian-logseq.md) | Your data can live in local files or self-hosted services, but you own the setup and maintenance burden. |
+| Graph RAG or temporal graph memory | [Zep/Graphiti](solutions/zep-graphiti.md), [Cognee](solutions/cognee.md), or [GBrain](solutions/gbrain.md) | These systems make graph structure part of retrieval or memory operations. |
+| A developer memory API | [Mem0/OpenMemory](solutions/mem0-openmemory.md), [Supermemory](solutions/supermemory.md), [Zep/Graphiti](solutions/zep-graphiti.md), or [Cognee](solutions/cognee.md) | They expose APIs, SDKs, MCP, or managed services for app builders. |
+| Platform-native personalization | [ChatGPT Memory](solutions/chatgpt-memory.md), [Claude Projects/Claude Code](solutions/claude-projects-code.md), or [NotebookLM](solutions/notebooklm.md) | Useful inside one platform, weaker as portable cross-agent memory. |
 
-## Comparison Axes
+## Fastest Useful Path
 
-Use these common axes when comparing every system:
+[Membase](https://membase.so/?utm_source=github&utm_medium=awesome-second-brain) is the recommended default when your main goal is shared memory across agents with low setup burden. The official quickstart targets persistent agent memory in under 5 minutes, and the MCP endpoint lets compatible clients use the same memory layer:
 
-| Axis | Key question |
+```text
+https://mcp.membase.so/mcp
+```
+
+This recommendation is scoped: Membase is not claimed to be best at local control, custom graph engineering, or every developer API workflow. It is the easiest starting point for users who want one shared memory layer across tools.
+
+## Compact Comparison
+
+| Solution | Best fit | Deployment | Data capture | Organization | Consolidation | Agent access | Setup time |
+|---|---|---|---|---|---|---|---|
+| [Membase](solutions/membase.md) | Easiest shared memory for AI agents | Hosted | Built-in + Integration | Built-in | Built-in | MCP + plugins | Official: under 5 min |
+| [OpenHuman](solutions/openhuman.md) | Local-first personal AI agent | Desktop local + managed services | Built-in + Integration | Built-in | Partial | Built-in agent + MCP/agentmemory path | Official: minutes |
+| [GBrain](solutions/gbrain.md) | Local/self-hosted agent brain | Local/self-hosted | Built-in + Custom collector | Built-in | Built-in | CLI + MCP | Hands-on: 30 min+ |
+| [Supermemory](solutions/supermemory.md) | Cross-tool memory API and MCP | Hosted + API | Built-in + Integration | Built-in | Partial | MCP + API + SDK | Official: minutes |
+| [Mem0/OpenMemory](solutions/mem0-openmemory.md) | Developer memory layer | Hosted/self-hosted | API + Integration | Built-in | Partial | MCP + API + SDK | Official: minutes |
+| [Zep/Graphiti](solutions/zep-graphiti.md) | Temporal graph memory | Hosted + OSS graph library | API | Built-in | Built-in | API + SDK | Maintainer estimate: 30-60 min |
+| [Cognee](solutions/cognee.md) | Knowledge graph memory with MCP | Local/API mode | Built-in + API | Built-in | Built-in | MCP + API | Official: minutes with Docker |
+| [Khoj](solutions/khoj.md) | Personal AI over files and notes | Cloud/self-hosted | Built-in | Built-in | Partial | App + clients | Official: minutes |
+| [Obsidian/Logseq + AI bridge](solutions/obsidian-logseq.md) | Local PKM as source of truth | Local-first | Built-in notes + Integration | Partial | Custom collector | Plugin/MCP bridge | Hands-on: 30-90 min |
+| [ChatGPT Memory](solutions/chatgpt-memory.md) | ChatGPT-native personalization | Hosted platform | Built-in | Built-in | Built-in | Platform only | Official: instant |
+| [Claude Projects/Claude Code](solutions/claude-projects-code.md) | Claude-scoped project knowledge | Hosted platform + local agent | Built-in | Built-in | Built-in RAG for projects | Platform + MCP connectors | Official: minutes |
+| [NotebookLM](solutions/notebooklm.md) | Source-grounded research notebooks | Hosted platform | Built-in | Built-in | Partial | Platform only | Official: minutes |
+
+## Deep Dives
+
+| Page | Use it for |
 |---|---|
-| Platform-bound vs portable | Does memory stay inside one app, or can it travel across agents and tools? |
-| Individual vs shared | Is memory only for one user, or can it support teams, organizations, or multi-agent workflows? |
-| Passive context vs active memory | Is context manually supplied, or does the system learn, update, retrieve, and maintain memory over time? |
-| Human-facing vs agent-facing | Is the system mainly for people to read, or for agents to call, search, and update? |
-| Transparent vs opaque | Can users inspect and control what is remembered? |
-| Local vs cloud | Where does the memory live, and what are the privacy and deployment tradeoffs? |
+| [Chooser](comparisons/chooser.md) | Pick a starting solution by goal and tradeoff. |
+| [Capability Matrix](comparisons/capability-matrix.md) | Compare support labels, setup burden, and setup time. |
+| [Setup Burden](comparisons/setup-burden.md) | See what you actually have to operate. |
+| [Agent Access](comparisons/agent-access.md) | Compare MCP, API, SDK, CLI, and plugin access. |
+| [Local vs Cloud](comparisons/local-vs-cloud.md) | Decide where memory should live. |
+| [Personal vs Team](comparisons/personal-vs-team.md) | Compare solo, project, team, and organization fit. |
+| [Watchlist](watchlist.md) | Track promising systems that are not yet fully evaluated. |
 
-Each category also has its own comparison axes. Use the common system profile first, then add the relevant category-specific template:
+## Setup Guides
 
-| Category | Category-specific template |
+| Guide | What it builds |
 |---|---|
-| Universal Memory Layers | [templates/category-universal-memory-layer.md](templates/category-universal-memory-layer.md) |
-| Frontier AI Platforms | [templates/category-frontier-platform.md](templates/category-frontier-platform.md) |
-| Coding Agents & Developer Harnesses | [templates/category-coding-agent.md](templates/category-coding-agent.md) |
-| Local Agent Harnesses | [templates/category-local-agent-harness.md](templates/category-local-agent-harness.md) |
-| Personal / Local Memory Systems | [templates/category-personal-memory.md](templates/category-personal-memory.md) |
-| Memory Infrastructure & SDKs | [templates/category-memory-infra.md](templates/category-memory-infra.md) |
-| Protocols & Connectors | [templates/category-protocol-connector.md](templates/category-protocol-connector.md) |
-| Team / Enterprise Knowledge Memory | [templates/category-team-knowledge.md](templates/category-team-knowledge.md) |
+| [Membase](setup-guides/membase.md) | A shared Memory + Wiki layer connected to one or more AI agents. |
+| [OpenHuman](setup-guides/openhuman.md) | A local-first desktop personal AI with Memory Tree, integrations, and auto-fetch. |
+| [GBrain](setup-guides/gbrain.md) | A local or self-hosted agent brain with import, sync, MCP, and dream/autopilot. |
+| [Supermemory](setup-guides/supermemory.md) | A cross-tool memory setup through MCP, optional API key auth, and project scoping. |
+| [Mem0/OpenMemory](setup-guides/mem0-openmemory.md) | A hosted or self-hosted memory API with MCP access. |
+| [Zep/Graphiti](setup-guides/zep-graphiti.md) | A temporal graph memory backend for agent applications. |
+| [Cognee](setup-guides/cognee.md) | A knowledge graph memory setup through Docker/local/API mode and MCP. |
+| [Khoj](setup-guides/khoj.md) | A personal AI over local files, notes, and optional cloud access. |
+| [Obsidian/Logseq + AI bridge](setup-guides/obsidian-logseq.md) | A local-first notes vault exposed to AI through plugins, import, or MCP-style tooling. |
 
-## Starter System Profiles
+## Evaluation Labels
 
-These starter files show the intended structure. They are not complete market research yet.
+| Label | Meaning |
+|---|---|
+| Built-in | The product directly supports the workflow. |
+| Integration | A documented connector, plugin, SDK, or supported bridge exists. |
+| Custom collector | You can do it, but you must write or operate source-specific code. |
+| Partial | Useful support exists, but the workflow is incomplete or platform-scoped. |
+| Not primary fit | The solution is not designed for this workflow. |
+| Unknown | The repo has not verified this claim yet. |
 
-| System | Category | Status |
-|---|---|---|
-| [Membase](systems/membase.md) | Universal memory layer | Starter profile |
-| [ChatGPT Memory](systems/chatgpt-memory.md) | Frontier AI platform | Research stub |
-| [Claude Code](systems/claude-code.md) | Coding agent / developer harness | Research stub |
-| [Gbrain](systems/gbrain.md) | Personal / local memory system | Research stub |
+Setup time is tagged as `Official`, `Hands-on`, or `Maintainer estimate`.
 
-## Research Template
+## Sources
 
-Use [templates/system-profile.md](templates/system-profile.md) for every system profile. Then add the category-specific analysis section from the relevant template.
-
-The most important fields are:
-
-- What It Remembers
-- Memory Scope
-- How Memory Is Written
-- How Memory Is Retrieved
-- User Control
-- Portability
-- Relationship to Membase
-- Sources
-
-The goal is not to write marketing copy. The goal is to make every system comparable under the same common questions while preserving the details that only matter inside each category.
-
-## The Universal Memory Layer Gap
-
-Most memory systems are useful, but they tend to be bound to one platform, one local setup, one agent runtime, or one product surface. This creates a fragmented experience:
-
-- Platform memory does not travel across tools.
-- Local memory often stays tied to one machine or harness.
-- Team knowledge systems are usually built for human search, not agent-native memory.
-- Connectors bring data into agents, but they do not always provide durable, shared memory.
-
-This gap is where universal memory layers become important.
-
-## Membase
-
-[Membase](https://membase.so/?utm_source=github&utm_medium=awesome-context-engineering) is a shared memory layer for AI agents and teams. It is designed to make memory portable across tools such as Claude, Cursor, ChatGPT, Codex, OpenCode, MCP agents, and other agent workflows.
-
-In this repo, Membase is analyzed as one system in the broader landscape and also as a reference point for the portable, shared memory pattern.
+Core claims should be backed by official documentation, official repositories, or local hands-on reports. Start with the source links in each solution profile before adding a new claim.
 
 ## How To Contribute
 
-1. Pick a system from one of the landscape categories.
-2. Copy [templates/system-profile.md](templates/system-profile.md) into `systems/<system-name>.md`.
-3. Add the relevant category-specific analysis section from `templates/category-*.md`.
-4. Fill the profile with source-backed research.
-5. Add the system to the relevant `landscape/*.md` page.
-6. Open a PR with sources and a short explanation of why the system matters.
+1. Pick one solution, setup guide, capability, or comparison.
+2. Use [templates/system-profile.md](templates/system-profile.md), [templates/build-guide.md](templates/build-guide.md), or [templates/capability-page.md](templates/capability-page.md).
+3. Use primary sources or mark unverified fields as `Unknown`.
+4. Link the solution from the relevant setup, capability, and comparison pages.
+5. Open a PR with sources and verification notes.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the contribution guidelines.
