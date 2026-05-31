@@ -5,6 +5,7 @@
 | [Membase](../solutions/membase.md) | Strong | Strong | Possible / coming soon | Memory projects and Wiki collections support project-level scoping today; full team/workspace separation is coming soon. |
 | [OpenHuman](../solutions/openhuman.md) | Strong | Possible | Not primary fit | Local-first personal desktop AI with many integrations. |
 | [GBrain](../solutions/gbrain.md) | Strong | Strong | Strong / operational | Company-brain path uses sources, source-scoped OAuth clients, federated reads, HTTP MCP, and usually Postgres/Supabase; directory-only scoping is convention-based. |
+| [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md) | Strong | Strong | Partial / operational | Multiple wiki directories, schemas, vaults, or repos can separate projects, but team permissions are external to the skill. |
 | [Supermemory](../solutions/supermemory.md) | Strong | Strong | Possible | Project scoping and connectors help, but team governance must be checked. |
 | [Mem0/OpenMemory](../solutions/mem0-openmemory.md) | Strong | Strong | Strong | User, session, and organizational memory make it product-friendly. |
 | [Zep/Graphiti](../solutions/zep-graphiti.md) | Possible | Strong | Strong | Best as app infrastructure for users, sessions, groups, and business data. |

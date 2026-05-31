@@ -5,6 +5,7 @@
 | [Membase](../solutions/membase.md) | 내장 | 주 용도 아님 | 연동 설치기 | Claude Code, OpenClaw, Hermes, Codex, Cursor, VS Code, Poke, OpenCode, ChatGPT, Claude, Gemini CLI | 내장 | Remote MCP와 plugin이 Memory tool, Wiki CRUD/search tool, profile/recent resource, `start` prompt를 노출하며, 대시보드 채팅은 외부 에이전트 없이 동작합니다. |
 | [OpenHuman](../solutions/openhuman.md) | 연동 | 부분 지원 | 주 용도 아님 | OpenHuman desktop agent와 agentmemory/MCP 관련 공유 경로 | OpenHuman 내부에서 내장 | 일반 memory API보다 자체 agent 경험이 중심입니다. |
 | [GBrain](../solutions/gbrain.md) | 내장 | 내장 | 내장 | Claude Code, Cursor/Windsurf, Claude Desktop/Cowork, ChatGPT, Perplexity 등 MCP client | 내장 | stdio/HTTP MCP가 30개 이상의 operation을 노출합니다. HTTP path는 OAuth scope와 filesystem-sensitive op에 대한 local-only 제한을 사용합니다. |
+| [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md) | 주 용도 아님 | 주 용도 아님 | Hermes runtime | Hermes 번들 skill | Hermes 내부에서 내장 | 번들 skill을 통해 Hermes가 로컬 Markdown wiki를 만들고, query하고, lint하고, 업데이트할 수 있습니다. 다른 agent에서 쓰려면 skill을 복사하거나 같은 동작을 재구성해야 합니다. |
 | [Supermemory](../solutions/supermemory.md) | 내장 | 내장 | 주 용도 아님 | MCP 호환 client | 내장 | MCP에 OAuth와 API key auth를 지원합니다. |
 | [Mem0/OpenMemory](../solutions/mem0-openmemory.md) | 내장 | 내장 | 연동 | MCP 호환 client와 framework 연동 | 내장 | 앱 memory를 위한 좋은 개발자 primitive입니다. |
 | [Zep/Graphiti](../solutions/zep-graphiti.md) | 부분 지원 | 내장 | 주 용도 아님 | LangGraph/Autogen 생태계 연동 | 내장 | 애플리케이션 인프라로 접근할 때 가장 좋습니다. |

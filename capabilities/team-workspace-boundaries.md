@@ -18,6 +18,7 @@ Personal and team scope defines who can read, write, update, delete, and share m
 | Membase | Partial | Memory project tags and Wiki collections for scoped search/filtering. | Full team/workspace separation is coming soon; verify governance details for the target plan. |
 | OpenHuman | Not primary fit | Personal local app and connected sources. | Team/workspace governance is not the core fit. |
 | GBrain | Built-in but operational | Brains, sources, source-scoped OAuth clients, federated reads, mounts, Postgres/Supabase, and HTTP MCP. | Directory-only scoping is convention-based; enforced team isolation needs explicit source/OAuth design. |
+| Hermes Agent + LLM Wiki | Partial | Separate wiki directories, schemas, vaults, or repos can create project boundaries. | Permissions, shared review, and team governance are external filesystem/sync/process concerns. |
 | Supermemory | Integration | Project scoping and connector metadata. | Team governance should be verified. |
 | Mem0/OpenMemory | Built-in | User, session, and organizational memory. | Requires careful scope design. |
 | Zep/Graphiti | Built-in | Projects, users, sessions, groups. | Best as app infrastructure. |
@@ -31,5 +32,6 @@ Personal and team scope defines who can read, write, update, delete, and share m
 ## Sources
 
 - [Membase attached vs universal memory](https://docs.membase.so/core-concepts/attached-vs-universal)
+- [Hermes LLM Wiki skill](https://github.com/NousResearch/hermes-agent/tree/main/skills/research/llm-wiki)
 - [Mem0 memory types](https://docs.mem0.ai/core-concepts/memory-types)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)

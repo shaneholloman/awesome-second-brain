@@ -18,6 +18,7 @@ Deployment and ownership define where memory lives, who operates storage and ind
 | Membase | Hosted | Account + hosted memory layer and remote MCP. | Fast setup, less infrastructure control. |
 | OpenHuman | Hybrid local + managed services | Desktop local state with managed sign-in, model routing, search proxying, and OAuth flows. | Local-first does not mean fully offline by default. |
 | GBrain | Local/self-hosted | Local PGLite for personal brains; Postgres/Supabase plus stdio/HTTP MCP for shared, large, or remote deployments. | PGLite is best for single-user local operation; shared/team deployments add database, OAuth, sync, job, and storage operations. |
+| Hermes Agent + LLM Wiki | Local/server-owned | Hermes runs on user-controlled infrastructure, and the wiki is a Markdown directory at `WIKI_PATH` or `~/wiki`. | Model providers, web extraction, browser use, and sync choices can still introduce cloud dependencies. |
 | Supermemory | Hosted + API | Hosted MCP, API, SDK, and connectors. | Self-hosting/control details should be verified for the target plan. |
 | Mem0/OpenMemory | Hosted/self-hosted | Hosted Mem0 Platform or open-source server/library path. | Self-hosting still requires memory infrastructure decisions. |
 | Zep/Graphiti | Hosted + OSS library | Zep managed platform or Graphiti library integration. | Platform and library are related but not identical surfaces. |
@@ -31,5 +32,6 @@ Deployment and ownership define where memory lives, who operates storage and ind
 ## Sources
 
 - [Membase quickstart](https://docs.membase.so/getting-started/quickstart)
+- [Hermes Agent website](https://hermes-agent.nousresearch.com/)
 - [Mem0 open-source overview](https://docs.mem0.ai/open-source/overview)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)

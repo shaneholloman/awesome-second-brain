@@ -18,6 +18,7 @@
 | Membase | 내장 | 출처, 대시보드 채팅, memories, Memory graph/table view, Wiki graph/table view, 필터, 에이전트 설정용 대시보드. | Memories 탭에서는 둘러보기, 프로젝트 이동, 삭제는 가능하지만 수동 생성/편집은 아직 지원하지 않습니다. 내보내기, 보존 정책, 요금제별 거버넌스는 확인해야 합니다. |
 | OpenHuman | 내장 | 데스크톱 UI, Memory Tree, Markdown vault, 온보딩, 음성, 앱 화면. | 초기 베타 동작은 직접 테스트해야 합니다. |
 | GBrain | 부분 지원 | client registration, request log, job, live activity, scoped operation용 CLI와 HTTP admin surface. | 운영 상태 점검에는 유용하지만 polished Notion/Roam 스타일 지식 UI는 아닙니다. |
+| Hermes Agent + LLM Wiki | 파일 기준 내장 | 사용자는 Markdown page, source folder, `index.md`, `log.md`, `SCHEMA.md`, frontmatter, confidence flag, contradiction marker를 확인하고 수정할 수 있습니다. | polished hosted dashboard는 없습니다. 검토는 파일, editor, Obsidian, git 같은 도구에서 이뤄집니다. |
 | Supermemory | 내장 | 호스팅 앱, 콘솔, 커넥터 상태, 프로젝트, 필터. | 팀/관리자 점검은 요금제와 설정에 의존합니다. |
 | Mem0/OpenMemory | 내장 | 플랫폼 대시보드와 self-hosted 대시보드/서버 경로. | 애플리케이션 소유자가 사용자용 검토 흐름을 여전히 정의해야 합니다. |
 | Zep/Graphiti | 부분 지원 | 개발자/플랫폼 UI와 그래프 API. | 최종 사용자를 위한 세컨드 브레인 UI가 주 표면은 아닙니다. |
@@ -32,5 +33,6 @@
 
 - [Membase Memory](https://docs.membase.so/features/memory)
 - [Membase Chat in Dashboard](https://docs.membase.so/features/chat)
+- [Hermes LLM Wiki skill](https://github.com/NousResearch/hermes-agent/tree/main/skills/research/llm-wiki)
 - [ChatGPT Memory FAQ](https://help.openai.com/en/articles/8590148-memory-faq)
 - [NotebookLM source docs](https://support.google.com/notebooklm/answer/16215270?hl=en)

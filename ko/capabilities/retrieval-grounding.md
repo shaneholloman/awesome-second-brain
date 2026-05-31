@@ -18,6 +18,7 @@
 | Membase | 내장 | 출처/프로젝트/날짜 필터가 있는 Memory용 graph + vector hybrid RAG, collection 범위 지정이 있는 Wiki용 vector + keyword hybrid search. | 대시보드 채팅과 연결된 에이전트가 두 저장소를 모두 사용할 수 있습니다. 대상 계정에서 사용 가능한 정보원을 확인하세요. |
 | OpenHuman | 내장 | 로컬 Memory Tree, Obsidian 호환 Markdown vault, memory graph, 맥락 압축. | 출처/근거 동작은 직접 검증이 필요합니다. |
 | GBrain | 내장 | `search`는 저비용 hybrid retrieval, `query`는 필터가 있는 확장 hybrid retrieval, graph/link 신호, timeline/fact retrieval, `think`는 인용/충돌/누락 분석이 있는 종합 답변. | 품질은 동기화, 임베딩, 정리된 출처 구조, reranker/provider 설정에 의존합니다. |
+| Hermes Agent + LLM Wiki | 내장 | skill이 `SCHEMA.md`, `index.md`, `log.md`로 orientation하고, file search, 관련 page 읽기, compiled wiki page 기반 답변 종합, 가치 있는 답변의 wiki 저장을 수행합니다. | 기본적으로 vector DB나 graph RAG engine은 아닙니다. 최신성은 wiki maintenance에 달려 있습니다. |
 | Supermemory | 내장 | 추출된 memory와 문서 chunk를 함께 찾는 hybrid search, graph memory, project/container 범위 지정, 메타데이터, API 필터. | 커넥터와 프로젝트 범위를 신중히 설정해야 합니다. |
 | Mem0/OpenMemory | 내장 | user ID, run ID, metadata가 있는 layered memory search. | 앱 소유자가 grounding과 출처 메타데이터 품질을 정의합니다. |
 | Zep/Graphiti | 내장 | temporal knowledge graph, fact, episode, Graph RAG. | 애플리케이션 데이터가 명시적으로 모델링될 때 가장 좋습니다. |
@@ -31,5 +32,6 @@
 ## 출처
 
 - [Membase MCP](https://docs.membase.so/features/membase-mcp)
+- [Hermes LLM Wiki skill](https://github.com/NousResearch/hermes-agent/tree/main/skills/research/llm-wiki)
 - [Zep graph documentation](https://help.getzep.com/v2/understanding-the-graph)
 - [NotebookLM source docs](https://support.google.com/notebooklm/answer/16215270?hl=en)

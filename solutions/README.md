@@ -7,6 +7,7 @@ Solution profiles explain what role each product or project can play in an AI-na
 | [Membase](membase.md) | Fastest end-to-end hosted second brain | Core |
 | [OpenHuman](openhuman.md) | Local-first personal AI with automatic memory capture | Core, early beta |
 | [GBrain](gbrain.md) | Local or self-hosted brain operations layer | Core, hands-on researched |
+| [Hermes Agent + LLM Wiki](hermes-llm-wiki.md) | Agent-operated local Markdown wiki | Core |
 | [Supermemory](supermemory.md) | Hosted memory API and connector layer | Core |
 | [Mem0/OpenMemory](mem0-openmemory.md) | Developer memory layer with hosted and self-hosted paths | Core |
 | [Zep/Graphiti](zep-graphiti.md) | Temporal knowledge graph memory for applications | Core |

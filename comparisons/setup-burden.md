@@ -17,6 +17,7 @@
 | [Mem0/OpenMemory](../solutions/mem0-openmemory.md) | API keys, SDK integration, hosted or self-hosted stack. | Memory scope design, governance, and retrieval tuning. |
 | [Zep/Graphiti](../solutions/zep-graphiti.md) | App integration, user/session/group model, graph ingestion, graph backend, LLM/embedding provider. | Requires product engineering rather than end-user setup. |
 | [Cognee](../solutions/cognee.md) | Docker/local/API mode, MCP client config, graph processing. | Separate standalone instances vs shared API mode can fragment memory. |
+| [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md) | Hermes install/config, `WIKI_PATH`, source curation, Markdown review, lint/maintenance cadence. | Easy to start, but quality depends on agent discipline and user review. |
 | [Khoj](../solutions/khoj.md) | Cloud or self-host install, source configuration, indexing. | Self-hosting and source freshness need active management. |
 
 ## High Burden

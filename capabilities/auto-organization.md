@@ -18,6 +18,7 @@ Knowledge organization is the system's ability to turn raw context into durable,
 | Membase | Built-in | Memory graph extraction plus linked Wiki documents and collections. | Memory retrieval also uses vector search; internal product behavior is managed by Membase. |
 | OpenHuman | Built-in | Memory Tree, local SQLite knowledge base, Markdown vault, token compression, hierarchical summary trees, collapse flows. | Exact consolidation quality should be tested. |
 | GBrain | Built-in | Schema packs, `gbrain-base-v2`, schema detect/suggest/review flows, page type inference, auto-linking, timeline/fact extraction, and takes. | Quality improves with structured Markdown, active schema selection, and review. |
+| Hermes Agent + LLM Wiki | Built-in | Agent-maintained Markdown wiki with schema, index, log, raw sources, entity pages, concept pages, comparison pages, query pages, frontmatter, tags, wikilinks, confidence, and contradiction markers. | Organization quality depends on the agent following the skill and the user maintaining schema discipline. |
 | Supermemory | Built-in | Processing pipeline, fact-based graph memory, relationship tracking, metadata/filtering. | Exact graph semantics should be verified per use case. |
 | Mem0/OpenMemory | Built-in | Layered memory types and search/promotion model. | App must choose scope and metadata carefully. |
 | Zep/Graphiti | Built-in | Entity nodes, entity edges, episodic nodes, facts, summaries. | Strong for temporal graph apps, not no-code PKM. |
@@ -32,5 +33,6 @@ Knowledge organization is the system's ability to turn raw context into durable,
 
 - [Membase overview](https://docs.membase.so/)
 - [How Membase works](https://docs.membase.so/core-concepts/how-membase-works)
+- [Hermes LLM Wiki skill](https://github.com/NousResearch/hermes-agent/tree/main/skills/research/llm-wiki)
 - [Zep graph documentation](https://help.getzep.com/v2/understanding-the-graph)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)

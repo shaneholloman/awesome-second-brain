@@ -18,6 +18,7 @@ Memory evolution is the ongoing work that keeps a second brain useful after capt
 | Membase | Built-in | Smart digesting and managed product updates. | Schedule/internal mechanics are product-managed. |
 | OpenHuman | Partial | Auto-fetch every 20 minutes, memory collapse, background thinking. | Not yet verified as a durable curated-knowledge loop. |
 | GBrain | Built-in | `gbrain dream` maintenance cycle, `gbrain autopilot`, sync/embed jobs. | User operates jobs and verifies quality. |
+| Hermes Agent + LLM Wiki | Partial | The bundled skill defines re-ingest, source drift checks, query filing, lint, archive, page splitting, and log rotation. | Not an autonomous maintenance loop by default; user or Hermes automation must trigger upkeep. |
 | Supermemory | Built-in | Product-managed graph memory updates, relationship tracking, and automatic forgetting. | Not exposed as a user-operated dream loop. |
 | Mem0/OpenMemory | Partial | Memory promotion/search behavior and platform processing. | Explicit consolidation policy is app-owned. |
 | Zep/Graphiti | Built-in | Temporal graph updates, facts, summaries. | Application must ingest updates correctly. |
@@ -31,5 +32,6 @@ Memory evolution is the ongoing work that keeps a second brain useful after capt
 ## Sources
 
 - [Membase overview](https://docs.membase.so/)
+- [Hermes LLM Wiki skill](https://github.com/NousResearch/hermes-agent/tree/main/skills/research/llm-wiki)
 - [Zep graph documentation](https://help.getzep.com/v2/understanding-the-graph)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)

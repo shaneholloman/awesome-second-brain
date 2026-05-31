@@ -5,6 +5,7 @@
 | [Membase](../solutions/membase.md) | 주 모델은 아님 | 예 | stack을 운영하지 않고 빠르게 end-to-end 세컨드 브레인을 만들기 | 로컬 인프라 통제권이 적음. |
 | [OpenHuman](../solutions/openhuman.md) | 예, 로컬 memory/runtime state와 Markdown vault | 예, 로그인, 모델 라우팅, 검색 프록시, OAuth/연동용 관리형 서비스 | 제품화된 로컬 우선 개인 AI | local-first가 기본적으로 완전 오프라인을 뜻하지는 않음. |
 | [GBrain](../solutions/gbrain.md) | 예, local PGLite와 self-hosted Postgres/Supabase 경로 | HTTP MCP는 원격 배포 가능 | 세컨드 브레인 운영에 대한 최대 통제권 | PGLite는 로컬 개인 사용에 적합합니다. shared/team deployment에는 Postgres/Supabase, OAuth, sync, embedding, collector, maintenance가 추가됩니다. |
+| [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md) | 예, 로컬/서버 Hermes runtime과 Markdown wiki 디렉터리 | 선택한 hosting, sync, model provider에 따라 선택적으로 사용 | 확인 가능한 에이전트 유지보수형 wiki | 관리형 connector/governance 계층은 없고, wiki hygiene과 runtime configuration은 사용자가 책임집니다. |
 | [Supermemory](../solutions/supermemory.md) | API/self-hosting 세부 사항은 제품 경로에 따라 다름 | 예 | 커넥터가 있는 hosted memory API | 호스팅 편의성과 플랫폼 경계. |
 | [Mem0/OpenMemory](../solutions/mem0-openmemory.md) | OSS/self-hosted 설정으로 가능 | Mem0 Platform으로 가능 | hosted 또는 직접 소유 stack을 가진 개발자용 memory 계층 | memory 범위와 거버넌스 설계 필요. |
 | [Zep/Graphiti](../solutions/zep-graphiti.md) | Graphiti는 open source, Zep은 managed | 예 | 앱을 위한 temporal graph memory | 제품 엔지니어링과 backend/provider 선택 필요. |
