@@ -1,3 +1,5 @@
+<div align="center">
+
 # Awesome Second Brain
 
 [![Context Engineering Banner](https://github.com/user-attachments/assets/57a6320b-5f9d-4703-a692-0280f20a7bb6)](https://membase.so/?utm_source=github&utm_medium=awesome-second-brain)
