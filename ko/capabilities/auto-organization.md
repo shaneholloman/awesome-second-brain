@@ -21,6 +21,7 @@
 | Hermes Agent + LLM Wiki | 내장 | schema, index, log, raw source, entity page, concept page, comparison page, query page, frontmatter, tag, wikilink, confidence, contradiction marker를 갖춘 에이전트 유지보수형 Markdown wiki. | 정리 품질은 에이전트가 skill을 따르는 정도와 사용자의 schema 관리 규율에 달려 있습니다. |
 | Supermemory | 내장 | 처리 파이프라인, 사실 기반 graph memory, 관계 추적, 메타데이터/필터링. | 정확한 그래프 의미는 용도별로 확인해야 합니다. |
 | Hyperspell | 내장 | memory, 연결된 data source, metadata filter, collection, structured resource data, LLM-ready summary, context graph claim, trace에서 추출한 procedural memory. | app owner가 taxonomy, metadata, review UI, safe recall boundary를 설계해야 합니다. |
+| Honcho | 내장 | workspace, peer, session, message, conclusion, representation, peer card, session context. | 최종 사용자용 organization과 review UI는 통합 구현에 달려 있습니다. |
 | Mem0/OpenMemory | 내장 | 계층화된 memory 유형과 검색/승격 모델. | 앱은 범위와 메타데이터를 신중히 선택해야 합니다. |
 | Zep/Graphiti | 내장 | entity node, entity edge, episodic node, fact, summary. | temporal graph 앱에는 강하지만 no-code PKM은 아닙니다. |
 | Cognee | 내장 | knowledge graph memory 도구와 처리. | 그래프 품질은 수집과 처리 방식에 의존합니다. |
@@ -37,5 +38,6 @@
 - [Hermes LLM Wiki skill](https://github.com/NousResearch/hermes-agent/tree/main/skills/research/llm-wiki)
 - [Hyperspell core concepts](https://docs.hyperspell.com/core/concepts)
 - [Hyperspell procedural memory](https://docs.hyperspell.com/usage/procedural-memory)
+- [Honcho overview](https://honcho.dev/docs/v3/documentation/introduction/overview)
 - [Zep graph documentation](https://help.getzep.com/v2/understanding-the-graph)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)

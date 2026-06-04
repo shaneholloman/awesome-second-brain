@@ -21,6 +21,7 @@ Personal and team scope defines who can read, write, update, delete, and share m
 | Hermes Agent + LLM Wiki | Partial | Separate wiki directories, schemas, vaults, or repos can create project boundaries. | Permissions, shared review, and team governance are external filesystem/sync/process concerns. |
 | Supermemory | Integration | Project scoping and connector metadata. | Team governance should be verified. |
 | Hyperspell | Built-in for app builders | Multi-tenant app user IDs, user tokens, source selection, metadata, collections, resource filters, and folder policies. | Team/workspace governance UX is app-owned; account/plan behavior should be verified. |
+| Honcho | Built-in for app builders | Workspaces isolate apps/environments; peers and sessions model users, agents, groups, and other entities. | End-user governance UX and permission flows are app-owned. |
 | Mem0/OpenMemory | Built-in | User, session, and organizational memory. | Requires careful scope design. |
 | Zep/Graphiti | Built-in | Projects, users, sessions, groups. | Best as app infrastructure. |
 | Cognee | Built-in in API mode | Shared backend/API mode. | Standalone mode isolates clients. |
@@ -36,5 +37,6 @@ Personal and team scope defines who can read, write, update, delete, and share m
 - [Hermes LLM Wiki skill](https://github.com/NousResearch/hermes-agent/tree/main/skills/research/llm-wiki)
 - [Hyperspell core concepts](https://docs.hyperspell.com/core/concepts)
 - [Hyperspell folder sync](https://docs.hyperspell.com/usage/folder-sync)
+- [Honcho overview](https://honcho.dev/docs/v3/documentation/introduction/overview)
 - [Mem0 memory types](https://docs.mem0.ai/core-concepts/memory-types)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)

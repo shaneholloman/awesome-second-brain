@@ -21,6 +21,7 @@
 | Hermes Agent + LLM Wiki | wiki 파일 기준 내장 | wiki content는 사용자가 확인, 수정, 백업, 이동, 삭제할 수 있는 로컬 Markdown입니다. | 프라이버시는 Hermes runtime, model provider, browser/web extraction, 사용하는 sync service에 달려 있습니다. |
 | Supermemory | 부분 지원 | 호스팅 앱, API, 커넥터 관리. | 커넥터 삭제 의미를 검토해야 합니다. |
 | Hyperspell | 부분 지원 | user token, source connection control, metadata filter, folder skip/manual/sync policy, manual review flow, 홈페이지의 삭제 claim. | 기본적으로 hosted입니다. export, retention, deletion, plan-specific governance는 확인해야 합니다. |
+| Honcho | self-hosting 기준 내장 | managed service 또는 self-hosted FastAPI server. workspace와 peer는 범위 지정 primitive를 제공합니다. | self-hosting은 더 많은 통제를 주지만 service, storage, provider key, update 운영을 추가합니다. |
 | Mem0/OpenMemory | 내장 | hosted 또는 self-hosted. | self-hosting이 가장 강한 통제권을 제공합니다. |
 | Zep/Graphiti | 부분 지원 | 호스팅형 Zep 또는 Graphiti library. | 플랫폼 보존 정책과 그래프 데이터 처리를 확인하세요. |
 | Cognee | 로컬 모드에서 내장 | standalone local/Docker 또는 API 모드. | 공유 API 모드는 통제 경계를 바꿉니다. |
@@ -36,5 +37,6 @@
 - [Hermes LLM Wiki skill](https://github.com/NousResearch/hermes-agent/tree/main/skills/research/llm-wiki)
 - [Hyperspell folder sync](https://docs.hyperspell.com/usage/folder-sync)
 - [Hyperspell website](https://www.hyperspell.com/)
+- [Honcho repository](https://github.com/plastic-labs/honcho)
 - [Mem0 open-source overview](https://docs.mem0.ai/open-source/overview)
 - [Khoj docs](https://docs.khoj.dev/)

@@ -21,6 +21,7 @@ Privacy, portability, and control cover where memory is stored, whether users ca
 | Hermes Agent + LLM Wiki | Built-in for wiki files | Wiki content is local Markdown that users can inspect, edit, back up, move, or delete. | Privacy still depends on Hermes runtime, model provider, browser/web extraction, and any sync service used. |
 | Supermemory | Partial | Hosted app, API, connector management. | Connector deletion semantics need review. |
 | Hyperspell | Partial | User tokens, source connection controls, metadata filters, folder skip/manual/sync policies, manual review flows, and homepage deletion claims. | Hosted by default; export, retention, deletion, and plan-specific governance should be verified. |
+| Honcho | Built-in for self-hosting | Managed service or self-hosted FastAPI server; workspaces and peers provide scoping primitives. | Self-hosting gives more control but adds service, storage, provider-key, and update operations. |
 | Mem0/OpenMemory | Built-in | Hosted or self-hosted. | Self-hosting provides strongest control. |
 | Zep/Graphiti | Partial | Hosted Zep or Graphiti library. | Verify platform retention and graph data handling. |
 | Cognee | Built-in in local mode | Standalone local/Docker or API mode. | Shared API mode changes control boundary. |
@@ -36,5 +37,6 @@ Privacy, portability, and control cover where memory is stored, whether users ca
 - [Hermes LLM Wiki skill](https://github.com/NousResearch/hermes-agent/tree/main/skills/research/llm-wiki)
 - [Hyperspell folder sync](https://docs.hyperspell.com/usage/folder-sync)
 - [Hyperspell website](https://www.hyperspell.com/)
+- [Honcho repository](https://github.com/plastic-labs/honcho)
 - [Mem0 open-source overview](https://docs.mem0.ai/open-source/overview)
 - [Khoj docs](https://docs.khoj.dev/)

@@ -21,6 +21,7 @@
 | Hermes Agent + LLM Wiki | 내장 자료 수집 흐름 | 번들 skill이 URL, PDF, 붙여넣은 텍스트, 파일, article, paper, transcript, asset을 `raw/`에 넣는 capture path를 정의합니다. | 넓은 OAuth 커넥터 계층은 아닙니다. 자료 수집은 에이전트/사용자 작업 흐름 중심입니다. |
 | Supermemory | 내장 + 연동 | MCP/API와 Drive, Gmail, Notion, OneDrive, GitHub, Web Crawler. | 커넥터 권한, 동기화 상태, container/project 태그가 중요합니다. |
 | Hyperspell | 내장 + 연동 | Hyperspell Connect, workspace integration, manual add, bulk ingestion, file upload, web crawler, folder sync policy, trace ingestion. | private beta/계정별 사용 가능 여부가 다릅니다. app owner가 source, metadata, user scoping을 직접 선택해야 합니다. |
+| Honcho | API + 연동 | API/SDK/MCP write로 message, session, uploaded document를 추가합니다. | 넓은 외부 source capture는 통합하는 app 또는 agent에 달려 있습니다. |
 | Mem0/OpenMemory | API + 연동 | 앱 또는 AI workflow에서 SDK/API/MCP로 쓰기. | 수집 설계는 애플리케이션이 책임집니다. |
 | Zep/Graphiti | API | 대화 히스토리, 비즈니스 데이터, 그래프 엔드포인트. | 앱 연동이 필요합니다. |
 | Cognee | 내장 + API | MCP memory/data 도구와 그래프 처리. | standalone 모드와 shared 모드에 따라 데이터가 저장되는 위치가 달라집니다. |
@@ -39,4 +40,5 @@
 - [Supermemory connectors](https://supermemory.ai/docs/connectors/overview)
 - [Hyperspell integrations](https://docs.hyperspell.com/integrations/overview)
 - [Hyperspell Connect](https://docs.hyperspell.com/usage/connect)
+- [Honcho overview](https://honcho.dev/docs/v3/documentation/introduction/overview)
 - [Khoj docs](https://docs.khoj.dev/)

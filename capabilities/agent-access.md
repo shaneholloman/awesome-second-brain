@@ -22,5 +22,6 @@ For the per-solution comparison, see [../comparisons/agent-access.md](../compari
 - [Membase MCP](https://docs.membase.so/features/membase-mcp)
 - [Supermemory MCP](https://supermemory.ai/mcp/)
 - [Hyperspell MCP overview](https://docs.hyperspell.com/advanced/mcp-overview)
+- [Honcho MCP integration](https://honcho.dev/docs/v3/guides/integrations/mcp)
 - [Mem0 MCP](https://docs.mem0.ai/platform/mem0-mcp)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)

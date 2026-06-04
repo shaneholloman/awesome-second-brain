@@ -10,6 +10,7 @@ Solution profiles explain what role each product or project can play in an AI-na
 | [Hermes Agent + LLM Wiki](hermes-llm-wiki.md) | Agent-operated local Markdown wiki | Core |
 | [Supermemory](supermemory.md) | Hosted memory API and connector layer | Core |
 | [Hyperspell](hyperspell.md) | Hosted company/user context layer for AI agents | Core, private beta caveat |
+| [Honcho](honcho.md) | Stateful agent memory and user-modeling layer | Core, source-backed |
 | [Hindsight](hindsight.md) | Agent memory API with memory banks | Core, source-backed |
 | [Mem0/OpenMemory](mem0-openmemory.md) | Developer memory layer with hosted and self-hosted paths | Core |
 | [Zep/Graphiti](zep-graphiti.md) | Temporal knowledge graph memory for applications | Core |

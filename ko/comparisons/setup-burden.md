@@ -15,6 +15,7 @@
 |---|---|---|
 | [Supermemory](../solutions/supermemory.md) | MCP/API 인증, 선택적 프로젝트 범위 지정, 커넥터, API 사용. | 커넥터 상태, 프로젝트 경계, 출처 삭제 의미. |
 | [Hyperspell](../solutions/hyperspell.md) | app/API key, user token, Hyperspell Connect, source 선택, metadata/collection 설계, MCP 또는 SDK 연동. | private beta 사용 가능 여부와 app-owned governance/review UI. |
+| [Honcho](../solutions/honcho.md) | hosted MCP/API key 또는 self-hosted FastAPI server, SDK/MCP 연동, peer/session 설계, self-hosting용 provider key. | agent memory 품질은 integration 설계에 의존하며, self-hosting은 backend 운영을 추가합니다. |
 | [Mem0/OpenMemory](../solutions/mem0-openmemory.md) | API key, SDK 연동, hosted/self-hosted stack. | memory 범위 설계, 거버넌스, 검색 튜닝. |
 | [Zep/Graphiti](../solutions/zep-graphiti.md) | 앱 연동, user/session/group 모델, 그래프 수집, 그래프 backend, LLM/embedding provider. | 최종 사용자 설정보다 제품 엔지니어링이 필요함. |
 | [Cognee](../solutions/cognee.md) | Docker/local/API 모드, MCP client config, 그래프 처리. | 별도 standalone instance와 공유 API 모드 선택이 memory를 쪼갤 수 있음. |

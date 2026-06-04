@@ -8,6 +8,7 @@
 | [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md) | 강함 | 강함 | 부분 지원 / 운영 필요 | 여러 wiki 디렉터리, schema, vault, repo로 프로젝트를 나눌 수 있지만 팀 permission은 skill 바깥에서 해결해야 합니다. |
 | [Supermemory](../solutions/supermemory.md) | 강함 | 강함 | 가능 | 프로젝트 범위 지정과 커넥터가 도움을 주지만 팀 거버넌스는 확인해야 합니다. |
 | [Hyperspell](../solutions/hyperspell.md) | 강함 | 강함 | app builder에게 강함 | multi-tenant user model, user token, metadata, collection, source selection, folder policy가 도움을 주지만 governance UX는 app team이 책임져야 합니다. |
+| [Honcho](../solutions/honcho.md) | 강함 | 강함 | app builder에게 강함 | workspace가 app/environment를 격리하고 peer/session이 user, agent, group 등 entity를 모델링할 수 있지만, 최종 사용자 governance UX는 app이 책임집니다. |
 | [Mem0/OpenMemory](../solutions/mem0-openmemory.md) | 강함 | 강함 | 강함 | user, session, organizational memory 덕분에 제품에 넣기 좋습니다. |
 | [Zep/Graphiti](../solutions/zep-graphiti.md) | 가능 | 강함 | 강함 | user, session, group, business data를 위한 앱 인프라로 가장 좋습니다. |
 | [Cognee](../solutions/cognee.md) | 강함 | 강함 | API 모드에서 강함 | standalone mode는 client를 격리하고 API mode는 공유를 중앙화합니다. |
