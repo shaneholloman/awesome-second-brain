@@ -1,56 +1,59 @@
 # Which Second Brain Should I Start With?
 
-This page is organized by the second-brain lifecycle, not by mutually exclusive product categories. If two paths both apply, start with the stage that blocks you most: capture, organization, memory evolution, retrieval/use, governance, or setup burden. To avoid comparing full apps and backend substrates as the same kind of tool, use [Solution Layers](solution-layers.md) alongside this chooser.
+This page is organized by the second-brain lifecycle, not by mutually exclusive product categories. Start with the lifecycle gap that blocks you most: collect, organize, evolve, use, or govern. If two paths both apply, solve the earlier lifecycle gap first, then use [Solution Layers](solution-layers.md) to understand whether you are adopting an app, local workspace, agent memory layer, substrate, or platform baseline.
 
-## If You Want The Fastest End-To-End Setup
+## If Scattered Context Is Not Being Collected
 
-Start with [Membase](../solutions/membase.md).
+Start with [Membase](../solutions/membase.md), [OpenHuman](../solutions/openhuman.md), [Supermemory](../solutions/supermemory.md), [Hyperspell](../solutions/hyperspell.md), [Khoj](../solutions/khoj.md), or [Obsidian/Logseq + AI bridge](../solutions/obsidian-logseq.md).
 
-Membase is the easiest default for AI power users who want a working collect-organize-use loop quickly. It is hosted, supports Memory and Wiki stores, imports AI chat history and connected app context, and exposes that knowledge through dashboard chat or common AI workflows without requiring users to run collectors, graph jobs, vector databases, or MCP infrastructure.
-
-Choose this path when the main pain is scattered context and setup burden, not local infrastructure control.
-
-## If You Want Local Or Self-Hosted Control
-
-Start with [OpenHuman](../solutions/openhuman.md), [GBrain](../solutions/gbrain.md), [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md), [Mnemosyne](../solutions/mnemosyne.md), [Khoj](../solutions/khoj.md), or [Obsidian/Logseq + AI bridge](../solutions/obsidian-logseq.md).
-
+- Membase is the low-ops hosted path when you want AI chats and connected sources to become usable Memory and Wiki without running local collectors or memory infrastructure.
 - OpenHuman is strongest when the user wants a productized local-first desktop AI assistant with automatic app capture.
-- GBrain is strongest when AI workflows should operate a structured local/self-hosted brain with CLI/MCP, schema/graph/timeline extraction, and dream/autopilot maintenance.
-- Hermes Agent + LLM Wiki is strongest when the user wants a local, inspectable Markdown wiki that an agent can compile, query, lint, and maintain.
-- Mnemosyne is strongest when an MCP or Hermes workflow needs local SQLite memory with SDK, CLI, plugin, memory-bank, and consolidation surfaces.
-- Khoj is better when the user wants a personal AI over files, notes, and documents with cloud or self-host choices.
-- Obsidian/Logseq is the most human-owned source of truth, but AI memory behavior depends on plugins, import workflows, or custom bridges.
+- Supermemory and Hyperspell are useful when collection needs to feed AI workflows, products, or agent-facing APIs.
+- Khoj is better when the main sources are files, notes, documents, and web pages.
+- Obsidian/Logseq is strongest when human-owned local notes are the source of truth, but AI capture depends on plugins, imports, or custom bridges.
 
-Choose this path when data ownership matters more than one-command setup.
+Choose this path when the first problem is that useful context is still scattered across tools.
 
-## If You Want Strong Knowledge Organization
+## If Raw Context Needs Durable Structure
 
-Start with [Membase](../solutions/membase.md), [Hyperspell](../solutions/hyperspell.md), [Honcho](../solutions/honcho.md), [Zep/Graphiti](../solutions/zep-graphiti.md), [Cognee](../solutions/cognee.md), [GBrain](../solutions/gbrain.md), [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md), or [Mnemosyne](../solutions/mnemosyne.md).
+Start with [Membase](../solutions/membase.md), [GBrain](../solutions/gbrain.md), [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md), [Mnemosyne](../solutions/mnemosyne.md), [Honcho](../solutions/honcho.md), [Zep/Graphiti](../solutions/zep-graphiti.md), or [Cognee](../solutions/cognee.md).
 
-- Membase is the hosted, lowest-burden option when you want captured context organized into Memory and Wiki with graph + vector retrieval for memory and direct dashboard chat for use.
-- Hyperspell is strongest when a product or internal agent needs a hosted context graph, metadata, indexed/live search, and procedural memory over connected workspace sources.
-- Honcho is strongest when a stateful agent needs peer representations, conclusions, session context, and user or agent modeling over time.
-- Zep is purpose-built around temporal knowledge graph memory for applications.
-- Cognee exposes knowledge graph memory and can run in standalone or shared API mode.
+- Membase is the hosted, lowest-burden option when captured context should become Memory and Wiki with graph + vector retrieval for memory and dashboard chat for use.
 - GBrain gives a deterministic Markdown/page/link/timeline model plus a documented source-scoped OAuth path for self-hosted second brains, but you operate the stack.
 - Hermes Agent + LLM Wiki gives a readable Markdown wiki with schema, index, log, wikilinks, provenance, and lint rules, but you operate the wiki discipline.
 - Mnemosyne gives memory tiers, memory banks, hybrid retrieval, and temporal triples inside a local SQLite-backed agent memory layer.
+- Honcho is strongest when stateful agents need peer representations, conclusions, session context, and user or agent modeling.
+- Zep/Graphiti and Cognee are better read as graph or knowledge memory substrates for applications.
 
-Choose this path when relationships, entities, facts, and time are first-class requirements.
+Choose this path when relationships, entities, facts, pages, links, and time are the main missing pieces.
 
-## If You Want Memory To Evolve Over Time
+## If Memory Needs To Evolve Over Time
 
-Start with [Membase](../solutions/membase.md), [GBrain](../solutions/gbrain.md), [Hyperspell](../solutions/hyperspell.md), [Honcho](../solutions/honcho.md), [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md), [Mnemosyne](../solutions/mnemosyne.md), [Zep/Graphiti](../solutions/zep-graphiti.md), or [Cognee](../solutions/cognee.md).
+Start with [Membase](../solutions/membase.md), [GBrain](../solutions/gbrain.md), [Hyperspell](../solutions/hyperspell.md), [Honcho](../solutions/honcho.md), [Hindsight](../solutions/hindsight.md), [Mnemosyne](../solutions/mnemosyne.md), [Zep/Graphiti](../solutions/zep-graphiti.md), or [Cognee](../solutions/cognee.md).
 
-These options do more than store raw notes. They include product-managed digestion, graph memory updates, background reasoning, procedural memory extraction, automatic forgetting, dream/autopilot jobs, agent-maintained wiki updates, temporal graph updates, or graph processing workflows that help memory improve after capture.
+These options do more than store raw notes. They include product-managed digestion, graph memory updates, background reasoning, procedural memory extraction, automatic forgetting, dream/autopilot jobs, memory-bank consolidation, temporal graph updates, or graph processing workflows that help memory improve after capture.
 
-## If You Are Building A Product
+Choose this path when stale, duplicated, or disconnected memory is the main problem.
 
-Start with [Mem0/OpenMemory](../solutions/mem0-openmemory.md), [Honcho](../solutions/honcho.md), [Hindsight](../solutions/hindsight.md), [Mnemosyne](../solutions/mnemosyne.md), [Supermemory](../solutions/supermemory.md), [Hyperspell](../solutions/hyperspell.md), [Zep/Graphiti](../solutions/zep-graphiti.md), or [Cognee](../solutions/cognee.md).
+## If Context Needs To Show Up Inside AI Tools
 
-These options expose APIs, SDKs, MCP, or hosted infrastructure. They are better product primitives than a human notes app when memory is part of an application architecture.
+Start with [Membase](../solutions/membase.md), [Supermemory](../solutions/supermemory.md), [Hyperspell](../solutions/hyperspell.md), [Honcho](../solutions/honcho.md), [Hindsight](../solutions/hindsight.md), [Mnemosyne](../solutions/mnemosyne.md), [Mem0/OpenMemory](../solutions/mem0-openmemory.md), or [Claude Projects/Claude Code](../solutions/claude-projects-code.md).
 
-If the project is mostly graph, retrieval, or knowledge infrastructure rather than a memory API surface, read it as a [memory substrate](solution-layers.md#layer-model) instead of a full second-brain app.
+- Membase exposes organized knowledge through dashboard chat and connected AI workflows without asking the user to operate MCP infrastructure first.
+- Supermemory, Hyperspell, Honcho, Hindsight, Mnemosyne, and Mem0/OpenMemory are stronger when memory is part of an agent or application architecture.
+- Claude Projects/Claude Code is useful when the work already lives inside Claude and project-scoped context is enough.
+
+Choose this path when the missing piece is MCP, API, SDK, plugin, dashboard chat, or platform access that activates memory during work.
+
+## If Memory Needs Governance Or Control
+
+Start with [Membase](../solutions/membase.md), [GBrain](../solutions/gbrain.md), [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md), [Obsidian/Logseq + AI bridge](../solutions/obsidian-logseq.md), [ChatGPT Memory](../solutions/chatgpt-memory.md), or [Claude Projects/Claude Code](../solutions/claude-projects-code.md).
+
+- Membase is useful when you want hosted Memory/Wiki controls and a lower-operations path.
+- GBrain, Hermes Agent + LLM Wiki, and Obsidian/Logseq are stronger when local files, inspectability, and human review matter more than hosted convenience.
+- ChatGPT Memory and Claude Projects/Claude Code are useful platform baselines, but visibility, export, and retrieval controls are platform-scoped.
+
+Choose this path when review, correction, deletion, provenance, ownership, permissions, or local/cloud control is the main decision driver.
 
 ## If You Already Live In One AI Platform
 

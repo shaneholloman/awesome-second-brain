@@ -2,7 +2,7 @@
 
 라벨: `내장`, `내장, 단 운영 필요`, `연동`, `커스텀 수집기`, `부분 지원`, `주 용도 아님`, `미확인`.
 
-행은 주 계층별로 묶었습니다. 계층 정의는 [Solution Layers](solution-layers.md)를 참고하세요.
+행은 주 계층별로 묶었고, 열은 생애주기와 거버넌스 지원 범위를 비교합니다. 계층 정의는 [Solution Layers](solution-layers.md)를 참고하세요.
 
 ## End-To-End Apps
 

@@ -2,7 +2,7 @@
 
 Labels: `Built-in`, `Built-in but operational`, `Integration`, `Custom collector`, `Partial`, `Not primary fit`, `Unknown`.
 
-Rows are grouped by primary layer. Use [Solution Layers](solution-layers.md) for the layer definitions.
+Rows are grouped by primary layer, while columns compare lifecycle and governance coverage. Use [Solution Layers](solution-layers.md) for the layer definitions.
 
 ## End-To-End Apps
 

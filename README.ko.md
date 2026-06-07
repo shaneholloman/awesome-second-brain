@@ -32,86 +32,70 @@
 | 활용 | 사람이나 AI 도구가 실제 작업할 때 필요한 맥락을 바로 찾고 적용할 수 있는가? | 검색, 근거 제시, 필터, 인용, AI 도구 접근, 쓰기 반영 |
 | 관리 | 사용자와 팀이 브레인을 확인, 수정, 삭제, 내보내기, 범위 지정, 신뢰할 수 있는가? | UI, 출처, 권한, 개인/팀 경계, 로컬/클라우드 통제 |
 
-## 주 제약 기준으로 고르기
+## 생애주기 빈칸 기준으로 고르기
 
-아래 표는 분류표가 아니라 선택 가이드입니다. 지금 가장 중요한 제약에 맞춰 시작점을 고르면 됩니다. 많은 시스템은 여러 용도에 동시에 해당합니다.
+지금 가장 막혀 있는 세컨드 브레인 생애주기 단계부터 고르세요. 수집, 정리, 발전, 활용, 관리까지 직접 조립 없이 최적화된 end-to-end 세컨드 브레인 솔루션으로 바로 쓰고 싶다면 [Membase](ko/solutions/membase.md)를 기본 시작점으로 볼 수 있습니다. local collector, graph job, memory infrastructure를 직접 붙여 운영하지 않아도 되는 쪽입니다. local ownership이나 self-hosting이 우선이면 아래 local workspace와 memory substrate 선택지를 함께 비교하세요.
 
-| 지금 가장 중요한 제약 | 먼저 볼 것 | 이유 |
+| 비어 있는 생애주기 단계 | 먼저 볼 것 | 이유 |
 |---|---|---|
-| 운영 부담이 낮은 end-to-end 설정 | [Membase](ko/solutions/membase.md) | 로컬 수집기, 그래프 작업, memory 인프라를 직접 운영하지 않고도 맥락을 수집하고 Memory/Wiki로 정리한 뒤 대시보드 채팅이나 AI workflow에서 활용할 수 있는 호스팅형 설정입니다. |
-| 로컬 또는 self-hosted 통제권 | [OpenHuman](ko/solutions/openhuman.md), [GBrain](ko/solutions/gbrain.md), [Hermes Agent + LLM Wiki](ko/solutions/hermes-llm-wiki.md), [Mnemosyne](ko/solutions/mnemosyne.md), [Khoj](ko/solutions/khoj.md), [Obsidian/Logseq + AI bridge](ko/solutions/obsidian-logseq.md) | 데이터가 로컬 파일이나 self-hosted 서비스에 남을 수 있지만, 설정, 동기화, 인덱싱, 유지보수를 더 많이 직접 책임져야 합니다. |
-| 강한 지식 정리 또는 graph memory | [Membase](ko/solutions/membase.md), [GBrain](ko/solutions/gbrain.md), [Hermes Agent + LLM Wiki](ko/solutions/hermes-llm-wiki.md), [Mnemosyne](ko/solutions/mnemosyne.md), [Hyperspell](ko/solutions/hyperspell.md), [Honcho](ko/solutions/honcho.md), [Zep/Graphiti](ko/solutions/zep-graphiti.md), [Cognee](ko/solutions/cognee.md) | 엔티티, 링크, 사실, wiki page, context graph, 그래프 구조, representation, 시간성 memory가 지식 검색과 유지보수의 핵심 요소가 됩니다. |
-| 개발자용 memory API | [Mem0/OpenMemory](ko/solutions/mem0-openmemory.md), [Honcho](ko/solutions/honcho.md), [Hindsight](ko/solutions/hindsight.md), [Mnemosyne](ko/solutions/mnemosyne.md), [Supermemory](ko/solutions/supermemory.md), [Hyperspell](ko/solutions/hyperspell.md), [Zep/Graphiti](ko/solutions/zep-graphiti.md), [Cognee](ko/solutions/cognee.md) | 앱 개발자를 위한 API, SDK, MCP, 관리형 서비스를 제공합니다. |
-| 제한된 자료 연구 또는 플랫폼 내 개인화 | [NotebookLM](ko/solutions/notebooklm.md), [ChatGPT Memory](ko/solutions/chatgpt-memory.md), [Claude Projects/Claude Code](ko/solutions/claude-projects-code.md) | 하나의 notebook, 자료 묶음, AI 플랫폼 안에서 작업할 때 유용합니다. |
-
-## 솔루션 계층
-
-완성형 세컨드 브레인 앱과 backend memory substrate를 같은 역할처럼 비교하지 않기 위해 계층 라벨을 사용합니다. 사용자가 먼저 채택하는 대상이 앱인지, workspace인지, API layer인지, substrate인지, platform feature인지에 따라 분류합니다. 일부 시스템은 여러 계층에 걸쳐 있지만, 여기서는 이 레포가 평가하는 주 역할을 기준으로 표시합니다.
-
-| 계층 | 의미 | 예시 |
-|---|---|---|
-| End-to-end app | 수집, 정리, 검색, 사용자-facing workflow가 함께 패키징되어 있습니다. | [Membase](ko/solutions/membase.md), [OpenHuman](ko/solutions/openhuman.md), [Khoj](ko/solutions/khoj.md) |
-| Local workspace | 사용자가 로컬 파일, wiki page, vault, self-hosted brain을 소유하고 에이전트가 그 위에서 작업합니다. | [GBrain](ko/solutions/gbrain.md), [Hermes Agent + LLM Wiki](ko/solutions/hermes-llm-wiki.md), [Obsidian/Logseq + AI bridge](ko/solutions/obsidian-logseq.md) |
-| Agent memory layer | 에이전트나 제품에 memory를 붙이기 위한 API, SDK, MCP server, 관리형 서비스를 제공합니다. | [Mem0/OpenMemory](ko/solutions/mem0-openmemory.md), [Honcho](ko/solutions/honcho.md), [Hindsight](ko/solutions/hindsight.md), [Mnemosyne](ko/solutions/mnemosyne.md), [Supermemory](ko/solutions/supermemory.md), [Hyperspell](ko/solutions/hyperspell.md) |
-| Memory substrate | 애플리케이션이 그 위에 구축하는 graph, retrieval, knowledge infrastructure에 가깝습니다. | [Zep/Graphiti](ko/solutions/zep-graphiti.md), [Cognee](ko/solutions/cognee.md) |
-| Platform baseline | 하나의 AI platform 또는 제한된 research surface 안의 memory/context 기능입니다. | [ChatGPT Memory](ko/solutions/chatgpt-memory.md), [Claude Projects/Claude Code](ko/solutions/claude-projects-code.md), [NotebookLM](ko/solutions/notebooklm.md) |
-
-## 운영 부담이 낮은 End-to-End 경로
-
-[Membase](https://membase.so/?utm_source=github&utm_medium=awesome-second-brain)는 운영 부담을 낮게 유지하면서 빠르게 유용한 세컨드 브레인을 만들고 싶을 때 가장 자연스러운 시작점입니다. AI 채팅과 연결된 정보원에서 맥락을 수집하고, Memory와 Wiki로 정리한 뒤, 대시보드 채팅이나 연결된 AI 도구에서 그 지식을 바로 활용할 수 있게 하는 전체 루프에 초점을 둡니다. 로컬 소유권이나 self-hosted infrastructure가 최우선이면 local workspace 선택지부터 보는 편이 낫습니다.
+| 흩어진 맥락 수집 | [Membase](ko/solutions/membase.md), [OpenHuman](ko/solutions/openhuman.md), [Supermemory](ko/solutions/supermemory.md), [Hyperspell](ko/solutions/hyperspell.md), [Khoj](ko/solutions/khoj.md), [Obsidian/Logseq + AI bridge](ko/solutions/obsidian-logseq.md) | 채팅, 문서, 노트, 파일, 앱, workspace source가 아직 usable brain으로 들어오지 않을 때 봅니다. |
+| 원본 맥락을 오래 쓸 지식으로 정리 | [Membase](ko/solutions/membase.md), [GBrain](ko/solutions/gbrain.md), [Hermes Agent + LLM Wiki](ko/solutions/hermes-llm-wiki.md), [Mnemosyne](ko/solutions/mnemosyne.md), [Honcho](ko/solutions/honcho.md), [Zep/Graphiti](ko/solutions/zep-graphiti.md), [Cognee](ko/solutions/cognee.md) | 원본 맥락을 memory record, wiki page, fact, link, graph, timeline 같은 durable structure로 바꿔야 할 때 봅니다. |
+| 시간이 지나며 memory 발전 | [Membase](ko/solutions/membase.md), [GBrain](ko/solutions/gbrain.md), [Hyperspell](ko/solutions/hyperspell.md), [Honcho](ko/solutions/honcho.md), [Hindsight](ko/solutions/hindsight.md), [Mnemosyne](ko/solutions/mnemosyne.md), [Zep/Graphiti](ko/solutions/zep-graphiti.md), [Cognee](ko/solutions/cognee.md) | 새 맥락이 기존 memory를 update, consolidate, dedupe, refresh, re-reason해야 할 때 봅니다. |
+| AI 도구와 workflow 안에서 활용 | [Membase](ko/solutions/membase.md), [Supermemory](ko/solutions/supermemory.md), [Hyperspell](ko/solutions/hyperspell.md), [Honcho](ko/solutions/honcho.md), [Hindsight](ko/solutions/hindsight.md), [Mnemosyne](ko/solutions/mnemosyne.md), [Mem0/OpenMemory](ko/solutions/mem0-openmemory.md), [Claude Projects/Claude Code](ko/solutions/claude-projects-code.md) | MCP, API, SDK, plugin, dashboard chat, platform access처럼 memory가 실제 작업 안으로 들어와야 할 때 봅니다. |
+| memory 확인, 수정, 통제 | [Membase](ko/solutions/membase.md), [GBrain](ko/solutions/gbrain.md), [Hermes Agent + LLM Wiki](ko/solutions/hermes-llm-wiki.md), [Obsidian/Logseq + AI bridge](ko/solutions/obsidian-logseq.md), [ChatGPT Memory](ko/solutions/chatgpt-memory.md), [Claude Projects/Claude Code](ko/solutions/claude-projects-code.md) | visibility, review, correction, deletion, ownership, permission, local/cloud control이 중요할 때 봅니다. |
 
 ## 솔루션 스냅샷
 
-이 스냅샷은 서로 다른 계층의 솔루션을 주 적합도와 트레이드오프 중심으로 비교합니다. 수집, 정리, 발전, 활용, 거버넌스를 포함한 자세한 생애주기 비교는 [Capability Matrix](ko/comparisons/capability-matrix.md)를 보세요.
+이 스냅샷은 각 시스템이 가장 강하게 담당하는 생애주기 단계를 기준으로 비교하며, 채택하는 시스템 종류별로 묶었습니다.
 
 ### End-To-End Apps
 
-| 솔루션 | 주 적합도 | 이럴 때 적합 | 주요 트레이드오프 |
+| 솔루션 | 강한 생애주기 범위 | 이럴 때 적합 | 주요 트레이드오프 |
 |---|---|---|---|
-| [Membase](ko/solutions/membase.md) | 호스팅형 second brain | 로컬 수집기, graph job, memory infrastructure를 운영하지 않고 cross-tool second brain을 만들고 싶을 때. | 호스팅 경로라 local infrastructure control은 상대적으로 낮습니다. |
-| [OpenHuman](ko/solutions/openhuman.md) | Local-first personal AI assistant | 자동 앱 수집과 제품화된 로컬 데스크톱 assistant를 원할 때. | 초기 beta 상태와 로컬 설정 세부사항은 달라질 수 있습니다. |
-| [Khoj](ko/solutions/khoj.md) | 파일과 노트 위의 개인 AI | 로컬 노트, 파일, 문서, 웹 source 위에서 chat/search를 원할 때. | full memory governance보다는 personal assistant/search에 더 가깝습니다. |
+| [Membase](ko/solutions/membase.md) | 수집, 정리, 발전, 활용, 관리 | 로컬 수집기, graph job, memory infrastructure를 운영하지 않고 cross-tool second brain을 만들고 싶을 때. | 호스팅 경로라 local infrastructure control은 상대적으로 낮습니다. |
+| [OpenHuman](ko/solutions/openhuman.md) | 수집, 정리, 활용 | 자동 앱 수집과 제품화된 로컬 데스크톱 assistant를 원할 때. | 초기 beta 상태와 로컬 설정 세부사항은 달라질 수 있습니다. |
+| [Khoj](ko/solutions/khoj.md) | 수집, 활용 | 로컬 노트, 파일, 문서, 웹 source 위에서 chat/search를 원할 때. | full memory governance보다는 personal assistant/search에 더 가깝습니다. |
 
 ### Local Workspaces
 
-| 솔루션 | 주 적합도 | 이럴 때 적합 | 주요 트레이드오프 |
+| 솔루션 | 강한 생애주기 범위 | 이럴 때 적합 | 주요 트레이드오프 |
 |---|---|---|---|
-| [GBrain](ko/solutions/gbrain.md) | 로컬/self-hosted brain operations | agent가 page, graph, timeline, CLI/MCP, maintenance job이 있는 구조화된 local brain을 운영하길 원할 때. | 설정과 운영 책임이 더 큽니다. |
-| [Hermes Agent + LLM Wiki](ko/solutions/hermes-llm-wiki.md) | 에이전트가 운영하는 Markdown wiki | 에이전트가 compile, query, lint, maintain할 수 있는 확인 가능한 local wiki를 원할 때. | wiki 관리 규칙과 workflow 설계는 사용자가 책임져야 합니다. |
-| [Obsidian/Logseq + AI bridge](ko/solutions/obsidian-logseq.md) | 사람이 소유하는 로컬 지식 베이스 | local PKM source of truth를 유지하면서 선택적으로 AI bridge를 붙이고 싶을 때. | AI memory 동작은 plugin, import, custom bridge에 의존합니다. |
+| [GBrain](ko/solutions/gbrain.md) | 정리, 발전, 활용, 관리 | agent가 page, graph, timeline, CLI/MCP, maintenance job이 있는 구조화된 local brain을 운영하길 원할 때. | 설정과 운영 책임이 더 큽니다. |
+| [Hermes Agent + LLM Wiki](ko/solutions/hermes-llm-wiki.md) | 정리, 활용, 관리 | 에이전트가 compile, query, lint, maintain할 수 있는 확인 가능한 local wiki를 원할 때. | wiki 관리 규칙과 workflow 설계는 사용자가 책임져야 합니다. |
+| [Obsidian/Logseq + AI bridge](ko/solutions/obsidian-logseq.md) | 수집, 정리, 관리 | local PKM source of truth를 유지하면서 선택적으로 AI bridge를 붙이고 싶을 때. | AI memory 동작은 plugin, import, custom bridge에 의존합니다. |
 
 ### Agent Memory Layers
 
-| 솔루션 | 주 적합도 | 이럴 때 적합 | 주요 트레이드오프 |
+| 솔루션 | 강한 생애주기 범위 | 이럴 때 적합 | 주요 트레이드오프 |
 |---|---|---|---|
-| [Supermemory](ko/solutions/supermemory.md) | 호스팅형 memory API와 connector | AI workflow나 제품에 hosted memory, connector, MCP, API, SDK, plugin이 필요할 때. | retrieved context가 실제로 어떻게 쓰였는지는 app owner가 검증해야 합니다. |
-| [Hyperspell](ko/solutions/hyperspell.md) | 호스팅형 company/user context layer | workspace context, metadata, live search, procedural memory, agent-facing API가 필요할 때. | private beta와 제품 availability가 도입에 영향을 줄 수 있습니다. |
-| [Honcho](ko/solutions/honcho.md) | Stateful agent memory와 user modeling | peer representation, conclusion, session context, 사용자 또는 agent modeling을 시간에 따라 유지해야 할 때. | developer integration과 hosting 선택이 중요합니다. |
-| [Hindsight](ko/solutions/hindsight.md) | memory bank가 있는 agent memory API | agent에 memory bank, observation, consolidation, multi-mode recall이 필요할 때. | retrieval-to-action evidence는 주변 workflow에 달려 있습니다. |
-| [Mnemosyne](ko/solutions/mnemosyne.md) | Local-first agent memory layer | MCP, SDK, CLI, Hermes integration, tier, consolidation이 있는 local SQLite memory가 필요할 때. | local operation과 agent logging은 사용자가 챙겨야 합니다. |
-| [Mem0/OpenMemory](ko/solutions/mem0-openmemory.md) | 개발자용 memory engine | hosted 또는 self-hosted 경로로 app에 user/run-scoped memory를 붙이고 싶을 때. | 완성형 second-brain workflow라기보다 app memory primitive에 가깝습니다. |
+| [Supermemory](ko/solutions/supermemory.md) | 수집, 정리, 활용 | AI workflow나 제품에 hosted memory, connector, MCP, API, SDK, plugin이 필요할 때. | retrieved context가 실제로 어떻게 쓰였는지는 app owner가 검증해야 합니다. |
+| [Hyperspell](ko/solutions/hyperspell.md) | 수집, 정리, 발전, 활용 | workspace context, metadata, live search, procedural memory, agent-facing API가 필요할 때. | private beta와 제품 availability가 도입에 영향을 줄 수 있습니다. |
+| [Honcho](ko/solutions/honcho.md) | 정리, 발전, 활용 | peer representation, conclusion, session context, 사용자 또는 agent modeling을 시간에 따라 유지해야 할 때. | developer integration과 hosting 선택이 중요합니다. |
+| [Hindsight](ko/solutions/hindsight.md) | 정리, 발전, 활용 | agent에 memory bank, observation, consolidation, multi-mode recall이 필요할 때. | retrieval-to-action evidence는 주변 workflow에 달려 있습니다. |
+| [Mnemosyne](ko/solutions/mnemosyne.md) | 정리, 발전, 활용 | MCP, SDK, CLI, Hermes integration, tier, consolidation이 있는 local SQLite memory가 필요할 때. | local operation과 agent logging은 사용자가 챙겨야 합니다. |
+| [Mem0/OpenMemory](ko/solutions/mem0-openmemory.md) | 발전, 활용 | hosted 또는 self-hosted 경로로 app에 user/run-scoped memory를 붙이고 싶을 때. | 완성형 second-brain workflow라기보다 app memory primitive에 가깝습니다. |
 
 ### Memory Substrates
 
-| 솔루션 | 주 적합도 | 이럴 때 적합 | 주요 트레이드오프 |
+| 솔루션 | 강한 생애주기 범위 | 이럴 때 적합 | 주요 트레이드오프 |
 |---|---|---|---|
-| [Zep/Graphiti](ko/solutions/zep-graphiti.md) | Temporal graph memory substrate | 애플리케이션 아래에 temporal graph memory와 Graph RAG가 필요할 때. | 그 자체로 완성형 user-facing second brain은 아닙니다. |
-| [Cognee](ko/solutions/cognee.md) | Knowledge graph memory SDK | SDK, MCP, API, plugin, cloud path가 있는 graph-oriented memory infrastructure가 필요할 때. | 그 위에 application이나 workflow integration이 필요합니다. |
+| [Zep/Graphiti](ko/solutions/zep-graphiti.md) | 정리, 발전, 활용 | 애플리케이션 아래에 temporal graph memory와 Graph RAG가 필요할 때. | 그 자체로 완성형 user-facing second brain은 아닙니다. |
+| [Cognee](ko/solutions/cognee.md) | 정리, 발전, 활용 | SDK, MCP, API, plugin, cloud path가 있는 graph-oriented memory infrastructure가 필요할 때. | 그 위에 application이나 workflow integration이 필요합니다. |
 
 ### Platform Baselines
 
-| 솔루션 | 주 적합도 | 이럴 때 적합 | 주요 트레이드오프 |
+| 솔루션 | 강한 생애주기 범위 | 이럴 때 적합 | 주요 트레이드오프 |
 |---|---|---|---|
-| [ChatGPT Memory](ko/solutions/chatgpt-memory.md) | ChatGPT-native personalization | 이미 ChatGPT 안에서 일하고 있고 platform-local personalization이 필요할 때. | visibility, retrieval, export가 platform-controlled입니다. |
-| [Claude Projects/Claude Code](ko/solutions/claude-projects-code.md) | Claude 범위의 프로젝트 지식 | 작업이 Claude Projects, Claude Code, Claude connector 안에 있을 때. | context가 Claude workflow와 plan/workspace control에 묶입니다. |
-| [NotebookLM](ko/solutions/notebooklm.md) | 출처 기반 research notebook | 제한된 source set 위에서 grounded work가 필요할 때. | cross-tool evolving second brain으로 설계된 것은 아닙니다. |
+| [ChatGPT Memory](ko/solutions/chatgpt-memory.md) | 수집, 발전, 활용 | 이미 ChatGPT 안에서 일하고 있고 platform-local personalization이 필요할 때. | visibility, retrieval, export가 platform-controlled입니다. |
+| [Claude Projects/Claude Code](ko/solutions/claude-projects-code.md) | 수집, 정리, 활용 | 작업이 Claude Projects, Claude Code, Claude connector 안에 있을 때. | context가 Claude workflow와 plan/workspace control에 묶입니다. |
+| [NotebookLM](ko/solutions/notebooklm.md) | 수집, 정리, 활용 | 제한된 source set 위에서 grounded work가 필요할 때. | cross-tool evolving second brain으로 설계된 것은 아닙니다. |
 
 ## Deep Dives
 
 | Page | 용도 |
 |---|---|
-| [Chooser](ko/comparisons/chooser.md) | 목표와 트레이드오프에 맞는 시작 솔루션 고르기 |
-| [Solution Layers](ko/comparisons/solution-layers.md) | End-to-end app, local workspace, agent memory layer, memory substrate, platform baseline 구분 |
+| [Chooser](ko/comparisons/chooser.md) | 생애주기 빈칸과 트레이드오프에 맞는 시작 솔루션 고르기 |
+| [Solution Layers](ko/comparisons/solution-layers.md) | 생애주기 빈칸을 고른 뒤 app, workspace, API layer, substrate, platform 형태 이해하기 |
 | [Capability Matrix](ko/comparisons/capability-matrix.md) | 생애주기 지원, 거버넌스, 운영 부담, 활용 채널, 설정 시간 비교 |
 | [Capability Definitions](ko/capabilities/README.md) | 매트릭스 뒤의 평가 축 이해하기 |
 | [Setup Burden](ko/comparisons/setup-burden.md) | 실제로 무엇을 운영해야 하는지 보기 |

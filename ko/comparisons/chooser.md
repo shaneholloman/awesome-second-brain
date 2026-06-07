@@ -1,59 +1,62 @@
 # 어떤 Second Brain으로 시작해야 할까?
 
-이 페이지는 서로 배타적인 제품 분류가 아니라 세컨드 브레인 생애주기를 기준으로 구성되어 있습니다. 두 경로가 모두 적용된다면 지금 가장 막히는 단계부터 시작하세요: 수집, 정리, memory 발전, 검색/활용, 거버넌스, 설정 부담. 완성형 앱과 backend substrate를 같은 종류처럼 비교하지 않으려면 [Solution Layers](solution-layers.md)도 함께 보세요.
+이 페이지는 서로 배타적인 제품 분류가 아니라 세컨드 브레인 생애주기를 기준으로 구성되어 있습니다. 지금 가장 막히는 생애주기 빈칸부터 시작하세요: 수집, 정리, 발전, 활용, 관리. 두 경로가 모두 적용된다면 더 앞쪽 생애주기 빈칸을 먼저 해결한 뒤, [Solution Layers](solution-layers.md)에서 앱, local workspace, agent memory layer, substrate, platform baseline 중 어떤 종류를 채택하는지 확인하세요.
 
-## 가장 빠른 End-To-End 설정을 원한다면
+## 흩어진 맥락이 아직 수집되지 않는다면
 
-[Membase](../solutions/membase.md)부터 보세요.
+[Membase](../solutions/membase.md), [OpenHuman](../solutions/openhuman.md), [Supermemory](../solutions/supermemory.md), [Hyperspell](../solutions/hyperspell.md), [Khoj](../solutions/khoj.md), [Obsidian/Logseq + AI bridge](../solutions/obsidian-logseq.md)부터 보세요.
 
-Membase는 AI power user가 수집-정리-활용 루프를 빠르게 만들고 싶을 때 가장 쉬운 기본 선택지입니다. 호스팅형이며 Memory와 Wiki 저장소를 지원하고, AI 대화 히스토리와 연결된 앱 맥락을 가져오며, 사용자가 수집기, 그래프 작업, 벡터 데이터베이스, MCP 인프라를 운영하지 않아도 대시보드 채팅이나 일반적인 AI workflow에서 지식을 활용할 수 있게 합니다.
+- Membase는 AI chat과 연결된 source를 local collector나 memory infrastructure 없이 Memory와 Wiki로 만들고 싶을 때 운영 부담이 낮은 hosted path입니다.
+- OpenHuman은 자동 앱 수집이 있는 제품화된 local-first desktop AI assistant를 원할 때 강합니다.
+- Supermemory와 Hyperspell은 수집된 맥락이 AI workflow, 제품, agent-facing API로 들어가야 할 때 유용합니다.
+- Khoj는 파일, 노트, 문서, 웹 페이지가 주요 source일 때 더 잘 맞습니다.
+- Obsidian/Logseq는 사람이 소유하는 local note가 source of truth일 때 강하지만, AI capture는 plugin, import, custom bridge에 의존합니다.
 
-주된 문제가 로컬 인프라 통제가 아니라 흩어진 맥락과 설정 부담일 때 이 경로를 선택하세요.
+유용한 맥락이 아직 여러 도구에 흩어져 있는 것이 첫 문제라면 이 경로를 선택하세요.
 
-## 로컬 또는 Self-Hosted 통제권을 원한다면
+## 원본 맥락을 오래 쓸 지식으로 정리해야 한다면
 
-[OpenHuman](../solutions/openhuman.md), [GBrain](../solutions/gbrain.md), [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md), [Mnemosyne](../solutions/mnemosyne.md), [Khoj](../solutions/khoj.md), [Obsidian/Logseq + AI bridge](../solutions/obsidian-logseq.md)부터 보세요.
+[Membase](../solutions/membase.md), [GBrain](../solutions/gbrain.md), [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md), [Mnemosyne](../solutions/mnemosyne.md), [Honcho](../solutions/honcho.md), [Zep/Graphiti](../solutions/zep-graphiti.md), [Cognee](../solutions/cognee.md)부터 보세요.
 
-- OpenHuman은 자동 앱 수집이 있는 제품화된 로컬 우선 데스크톱 AI assistant를 원할 때 가장 강합니다.
-- GBrain은 AI workflow가 CLI/MCP, schema/graph/timeline 추출, dream/autopilot 유지보수가 있는 구조화된 로컬/self-hosted brain을 운영해야 할 때 가장 강합니다.
-- Hermes Agent + LLM Wiki는 에이전트가 컴파일, 질의, 점검, 유지보수할 수 있는 로컬 Markdown wiki를 확인 가능한 형태로 갖고 싶을 때 가장 강합니다.
-- Mnemosyne는 MCP 또는 Hermes workflow에 SDK, CLI, plugin, memory bank, consolidation surface가 있는 로컬 SQLite memory가 필요할 때 가장 강합니다.
-- Khoj는 cloud/self-host 선택지와 함께 파일, 노트, 문서 위의 개인 AI를 원할 때 더 좋습니다.
-- Obsidian/Logseq는 사람이 가장 강하게 소유하는 source of truth이지만, AI memory 동작은 플러그인, 가져오기 workflow, 커스텀 bridge에 의존합니다.
-
-데이터 소유권이 한 번에 끝나는 설정보다 중요할 때 이 경로를 선택하세요.
-
-## 강한 지식 정리를 원한다면
-
-[Membase](../solutions/membase.md), [Hyperspell](../solutions/hyperspell.md), [Honcho](../solutions/honcho.md), [Zep/Graphiti](../solutions/zep-graphiti.md), [Cognee](../solutions/cognee.md), [GBrain](../solutions/gbrain.md), [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md), [Mnemosyne](../solutions/mnemosyne.md)부터 보세요.
-
-- Membase는 수집된 맥락을 Memory와 Wiki로 정리하고, Memory용 graph + vector retrieval과 직접 대시보드 채팅을 쓰고 싶을 때 부담이 가장 낮은 호스팅형 선택지입니다.
-- Hyperspell은 제품이나 내부 agent가 연결된 workspace source 위에서 hosted context graph, metadata, indexed/live search, procedural memory를 필요로 할 때 강합니다.
-- Honcho는 stateful agent가 peer representation, conclusion, session context, 사용자 또는 agent modeling을 시간에 따라 유지해야 할 때 강합니다.
-- Zep은 애플리케이션용 temporal knowledge graph memory에 특화되어 있습니다.
-- Cognee는 knowledge graph memory를 노출하며 standalone 또는 shared API mode로 실행할 수 있습니다.
-- GBrain은 self-hosted 세컨드 브레인을 위한 deterministic Markdown/page/link/timeline model과 문서화된 source-scoped OAuth 경로를 제공하지만, stack 운영은 사용자가 맡습니다.
-- Hermes Agent + LLM Wiki는 schema, index, log, wikilink, provenance, lint 규칙이 있는 읽을 수 있는 Markdown wiki를 제공하지만, wiki 관리 규율은 사용자가 운영해야 합니다.
+- Membase는 수집된 맥락을 Memory와 Wiki로 정리하고, Memory용 graph + vector retrieval과 dashboard chat까지 쓰고 싶을 때 부담이 낮은 hosted option입니다.
+- GBrain은 self-hosted second brain을 위한 deterministic Markdown/page/link/timeline model과 source-scoped OAuth 경로를 제공하지만 stack 운영은 사용자가 맡습니다.
+- Hermes Agent + LLM Wiki는 schema, index, log, wikilink, provenance, lint 규칙이 있는 읽을 수 있는 Markdown wiki를 제공하지만 wiki 관리 규율은 사용자가 운영해야 합니다.
 - Mnemosyne는 local SQLite-backed agent memory layer 안에서 memory tier, memory bank, hybrid retrieval, temporal triple을 제공합니다.
+- Honcho는 stateful agent가 peer representation, conclusion, session context, 사용자 또는 agent modeling을 필요로 할 때 강합니다.
+- Zep/Graphiti와 Cognee는 애플리케이션을 위한 graph 또는 knowledge memory substrate로 보는 편이 맞습니다.
 
-관계, 엔티티, 사실, 시간이 핵심 요구사항일 때 이 경로를 선택하세요.
+관계, 엔티티, 사실, page, link, 시간이 가장 부족한 조각이라면 이 경로를 선택하세요.
 
-## Memory가 시간이 지나며 발전하길 원한다면
+## Memory가 시간이 지나며 발전해야 한다면
 
-[Membase](../solutions/membase.md), [GBrain](../solutions/gbrain.md), [Hyperspell](../solutions/hyperspell.md), [Honcho](../solutions/honcho.md), [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md), [Mnemosyne](../solutions/mnemosyne.md), [Zep/Graphiti](../solutions/zep-graphiti.md), [Cognee](../solutions/cognee.md)부터 보세요.
+[Membase](../solutions/membase.md), [GBrain](../solutions/gbrain.md), [Hyperspell](../solutions/hyperspell.md), [Honcho](../solutions/honcho.md), [Hindsight](../solutions/hindsight.md), [Mnemosyne](../solutions/mnemosyne.md), [Zep/Graphiti](../solutions/zep-graphiti.md), [Cognee](../solutions/cognee.md)부터 보세요.
 
-이 선택지들은 원본 노트를 저장하는 데서 끝나지 않습니다. 제품이 관리하는 digesting, graph memory update, background reasoning, procedural memory extraction, automatic forgetting, dream/autopilot 작업, 에이전트가 유지하는 wiki update, temporal graph update, graph processing workflow를 통해 수집 이후 memory가 개선되도록 돕습니다.
+이 선택지들은 원본 노트를 저장하는 데서 끝나지 않습니다. 제품이 관리하는 digesting, graph memory update, background reasoning, procedural memory extraction, automatic forgetting, dream/autopilot job, memory-bank consolidation, temporal graph update, graph processing workflow를 통해 수집 이후 memory가 개선되도록 돕습니다.
 
-## 제품을 만들고 있다면
+memory가 낡거나 중복되거나 서로 연결되지 않는 것이 문제라면 이 경로를 선택하세요.
 
-[Mem0/OpenMemory](../solutions/mem0-openmemory.md), [Honcho](../solutions/honcho.md), [Hindsight](../solutions/hindsight.md), [Mnemosyne](../solutions/mnemosyne.md), [Supermemory](../solutions/supermemory.md), [Hyperspell](../solutions/hyperspell.md), [Zep/Graphiti](../solutions/zep-graphiti.md), [Cognee](../solutions/cognee.md)부터 보세요.
+## AI 도구와 workflow 안에서 맥락이 쓰여야 한다면
 
-이 선택지들은 API, SDK, MCP, 호스팅 인프라를 제공합니다. memory가 애플리케이션 아키텍처의 일부라면 사람이 쓰는 notes app보다 제품 primitive로 더 적합합니다.
+[Membase](../solutions/membase.md), [Supermemory](../solutions/supermemory.md), [Hyperspell](../solutions/hyperspell.md), [Honcho](../solutions/honcho.md), [Hindsight](../solutions/hindsight.md), [Mnemosyne](../solutions/mnemosyne.md), [Mem0/OpenMemory](../solutions/mem0-openmemory.md), [Claude Projects/Claude Code](../solutions/claude-projects-code.md)부터 보세요.
 
-프로젝트가 memory API surface라기보다 graph, retrieval, knowledge infrastructure에 가깝다면 완성형 second-brain app이 아니라 [memory substrate](solution-layers.md#계층-모델)로 읽는 편이 맞습니다.
+- Membase는 MCP infrastructure를 먼저 운영하지 않아도 정리된 지식을 dashboard chat과 연결된 AI workflow에서 쓸 수 있게 합니다.
+- Supermemory, Hyperspell, Honcho, Hindsight, Mnemosyne, Mem0/OpenMemory는 memory가 agent나 application architecture의 일부일 때 더 잘 맞습니다.
+- Claude Projects/Claude Code는 작업이 이미 Claude 안에 있고 project-scoped context로 충분할 때 유용합니다.
+
+MCP, API, SDK, plugin, dashboard chat, platform access처럼 memory를 실제 작업 중 활성화하는 경로가 필요하다면 이 경로를 선택하세요.
+
+## Memory를 확인, 수정, 통제해야 한다면
+
+[Membase](../solutions/membase.md), [GBrain](../solutions/gbrain.md), [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md), [Obsidian/Logseq + AI bridge](../solutions/obsidian-logseq.md), [ChatGPT Memory](../solutions/chatgpt-memory.md), [Claude Projects/Claude Code](../solutions/claude-projects-code.md)부터 보세요.
+
+- Membase는 hosted Memory/Wiki control과 낮은 운영 부담을 함께 원할 때 유용합니다.
+- GBrain, Hermes Agent + LLM Wiki, Obsidian/Logseq는 local file, inspectability, human review가 hosted convenience보다 중요할 때 더 강합니다.
+- ChatGPT Memory와 Claude Projects/Claude Code는 유용한 platform baseline이지만 visibility, export, retrieval control은 platform 범위에 묶입니다.
+
+review, correction, deletion, provenance, ownership, permission, local/cloud control이 핵심 판단 기준이라면 이 경로를 선택하세요.
 
 ## 이미 하나의 AI Platform 안에서 일한다면
 
 [ChatGPT Memory](../solutions/chatgpt-memory.md), [Claude Projects/Claude Code](../solutions/claude-projects-code.md), [NotebookLM](../solutions/notebooklm.md)부터 보세요.
 
-이들은 유용한 기준선이지만 플랫폼에 묶여 있습니다. 더 넓은 수집, 정리, 검색 계층과 함께 쓰지 않는 한 완전한 자가 발전형 세컨드 브레인으로 보면 안 됩니다.
+이들은 유용한 기준선이지만 platform-bound입니다. 더 넓은 수집, 정리, 검색 계층과 함께 쓰지 않는 한 완전한 self-evolving second brain으로 보면 안 됩니다.
