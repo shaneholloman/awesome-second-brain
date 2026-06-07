@@ -104,11 +104,11 @@ Core claims should be backed by official documentation, official repositories, o
 
 ## How To Contribute
 
-1. Pick one solution, capability, comparison, setup guide, example, or watchlist entry.
+1. Pick the smallest contribution type that fits your evidence: core solution, capability/comparison update, setup guide, example, or watchlist entry.
 2. Use [templates/system-profile.md](templates/system-profile.md) or [templates/capability-page.md](templates/capability-page.md).
 3. Use primary sources or mark unverified fields as `Unknown`.
-4. Link the solution from the relevant capability and comparison pages.
-5. Open a PR with sources and verification notes.
+4. For core solution profiles, link the solution from the relevant chooser, comparison, and capability pages so readers can evaluate it through the main decision paths.
+5. Open a PR with sources, verification notes, and any known limitations.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the contribution guidelines.
 

@@ -2,9 +2,9 @@
 
 This repo compares existing tools and products for building AI-native second brains. Contributions should help a reader decide what to evaluate, what tradeoffs matter, and which workflows are actually supported.
 
-## What Counts
+## What Belongs Here
 
-Good contributions answer practical questions:
+This repo is for decision-oriented comparisons of AI-native second-brain systems. Good contributions help readers answer practical questions:
 
 - Where does memory live: local, hosted, self-hosted, or platform-bound?
 - How long does it take to get the first useful memory?
@@ -15,19 +15,49 @@ Good contributions answer practical questions:
 - Can users separate personal, project, workspace, and team scopes?
 - What can users inspect, edit, delete, export, or audit?
 
-## How To Add a Solution
+Generic vector databases, RAG libraries, note apps, or agent frameworks are in scope only when the contribution explains their second-brain role clearly.
 
-1. Copy [templates/system-profile.md](templates/system-profile.md) into `solutions/<solution-name>.md`.
-2. Add the solution to [solutions/README.md](solutions/README.md), [README.md](README.md), and the relevant comparison tables.
-3. Update capability pages under `capabilities/` only for workflows you can source or verify.
-4. Link official setup docs, official repos, and primary source material instead of duplicating command-by-command setup instructions.
-5. Mark uncertain fields as `Unknown` instead of guessing.
+## Contribution Types
 
-## How To Add a Setup Guide or Example
+Pick the smallest contribution type that fits the evidence you have:
 
-Use `setup-guides/` for verified setup paths and `examples/` for scenario-level workflows. Do not add a setup guide unless you can explain how to verify that retrieval or write-back actually worked.
+- Core solution profile: a shipped, source-backed system that readers can reasonably evaluate today.
+- Capability or comparison update: a focused addition to an existing decision path, useful when a project is relevant to one workflow but not ready for a full profile.
+- Setup guide: a verified setup path under `setup-guides/`, including how to confirm retrieval, write-back, or activation worked.
+- Example: a scenario-level workflow under `examples/` that shows how a second-brain pattern is used.
+- Watchlist entry: a project the maintainers intentionally want to track, but not a full evaluated profile.
 
-## Profile Quality Bar
+Not every rejected core profile becomes a watchlist item. A project may be declined entirely if it is too early, outside the repo scope, insufficiently sourced, unclear on licensing, mainly relies on future or WIP surfaces, or does not add enough decision value for readers.
+
+## Core Solution Bar
+
+Before opening a full solution profile, check the project against all of these filters:
+
+- Scope fit: it directly addresses AI second-brain, agent memory, personal/team knowledge, or context-engineering workflows.
+- Shipped surface: core claims should describe functionality available today. Planned features, open issues, roadmaps, or WIP branches can be mentioned as limitations, but should not be the basis for core placement.
+- Activation: at least one AI-tool access path should work today, such as MCP, API, SDK, CLI, plugin, app UI, or documented connector.
+- Lifecycle coverage: it meaningfully covers multiple parts of the second-brain lifecycle: Collect, Organize, Evolve, Use, and Govern. A project that is strong on only one axis may fit a capability page better than a core profile.
+- Decision value: the project should add a distinct option for readers, not only duplicate an existing core entry with less maturity or less evidence.
+- Operational clarity: deployment model, setup burden, data ownership, license or source-availability status, and personal/team scope should be explainable from sources.
+
+## Core Profile Coverage
+
+A full core solution profile should be wired into the repo's decision paths, not only added as a standalone page.
+
+Required for core profiles:
+
+- `solutions/<solution-name>.md`, copied from [templates/system-profile.md](templates/system-profile.md)
+- `README.md` chooser rows and compact comparison table
+- `solutions/README.md`
+
+Conditionally required when source-backed and relevant:
+
+- `comparisons/*` pages, such as capability matrix, setup burden, agent access, local vs cloud, or personal vs team
+- `capabilities/*` pages for workflows the solution actually supports
+
+If a solution does not yet have enough evidence for those decision paths, use a narrower contribution type or do not add it yet.
+
+## Profile Content
 
 Every solution profile should answer:
 
@@ -46,7 +76,9 @@ Every solution profile should answer:
 - tradeoffs
 - official setup or evaluation links
 
-## Sources
+Use official setup docs, official repos, and primary source material instead of duplicating command-by-command setup instructions. Mark uncertain fields as `Unknown` instead of guessing.
+
+## Evidence and Claims
 
 Use primary sources whenever possible:
 
@@ -60,6 +92,20 @@ When using local or internal test reports, summarize them clearly and avoid pres
 
 Closed-source and hosted products are welcome. Contributors do not need to prove or disclose internal models, prompts, ranking logic, graph construction, or infrastructure details. Describe the public behavior that can be verified from docs, product UI, APIs, repos, or hands-on testing. Mark private or unavailable details as `Not disclosed` or `Unknown`.
 
+### Benchmarks and Claims
+
+Benchmarks are useful, but describe who produced them and what they measure. Distinguish independent third-party validation from maintainer-published benchmarks, local test reports, and vendor claims. Do not compare different metrics as if they are equivalent; for example, end-to-end answer grading, Recall@K, latency, and cost measure different things.
+
+Use conservative wording:
+
+- Good: "Maintainer-published benchmarks report..."
+- Good: "A local hands-on test found..."
+- Avoid: "Best", "leader", "state of the art", or broad quality claims unless an independent source supports that exact comparison.
+
+### License and Source Availability
+
+Do not use `Open source: Yes` unless the project has a recognized open-source license or the license is clearly stated in the official source. For public repositories without a declared license, use wording such as `Public repo; license not declared`.
+
 ## Writing Style
 
 - Be factual and specific.
@@ -69,12 +115,15 @@ Closed-source and hosted products are welcome. Contributors do not need to prove
 - Use the standard support labels from [README.md](README.md).
 - Keep recommendations scoped to the workflow they are best for, and explain tradeoffs without promotional framing.
 
-## Pull Request Guidelines
+## Pull Request Checklist
 
 - One solution or workflow per PR is preferred.
 - Include sources and verification notes.
+- State known limitations instead of smoothing them over.
 - Keep unrelated formatting changes out of the PR.
 - If a page is a placeholder or watchlist entry, label it clearly as not fully evaluated.
+- Resolve conflicts with `main` before requesting review.
+- Do not rely on future or WIP features for core placement.
 
 ## License Agreement
 
