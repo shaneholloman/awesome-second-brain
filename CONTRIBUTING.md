@@ -17,6 +17,17 @@ This repo is for decision-oriented comparisons of AI-native second-brain systems
 
 Generic vector databases, RAG libraries, note apps, or agent frameworks are in scope only when the contribution explains their second-brain role clearly.
 
+## MECE Decision Model
+
+Keep two decision axes separate:
+
+- Lifecycle gap: what part of the second-brain lifecycle the reader is trying to solve first: Collect, Organize, Evolve, Use, or Govern.
+- Primary layer: what kind of system the reader is adopting first: end-to-end app, local workspace, agent memory layer, memory substrate, or platform baseline.
+
+The lifecycle chooser answers "what problem should I solve first?" The Solution Snapshot, Solution Layers page, and Capability Matrix answer "what kind of system am I adopting, and what tradeoffs come with that layer?" Do not create a new product category when a lifecycle row, capability page, or layer grouping already explains the difference.
+
+When a system spans multiple areas, choose one primary adoption layer and describe secondary roles in the profile. For example, a memory API with connectors may support collection, organization, and use, but it is still an agent memory layer if developers adopt it through API, SDK, MCP, or plugins first.
+
 ## Contribution Types
 
 Pick the smallest contribution type that fits the evidence you have:
@@ -37,6 +48,7 @@ Before opening a full solution profile, check the project against all of these f
 - Shipped surface: core claims should describe functionality available today. Planned features, open issues, roadmaps, or WIP branches can be mentioned as limitations, but should not be the basis for core placement.
 - Activation: at least one AI-tool access path should work today, such as MCP, API, SDK, CLI, plugin, app UI, or documented connector.
 - Lifecycle coverage: it meaningfully covers multiple parts of the second-brain lifecycle: Collect, Organize, Evolve, Use, and Govern. A project that is strong on only one axis may fit a capability page better than a core profile.
+- Primary layer fit: it can be placed in exactly one primary layer for README and matrix grouping, even if the profile explains secondary roles.
 - Decision value: the project should add a distinct option for readers, not only duplicate an existing core entry with less maturity or less evidence.
 - Operational clarity: deployment model, setup burden, data ownership, license or source-availability status, and personal/team scope should be explainable from sources.
 
@@ -47,13 +59,16 @@ A full core solution profile should be wired into the repo's decision paths, not
 Required for core profiles:
 
 - `solutions/<solution-name>.md`, copied from [templates/system-profile.md](templates/system-profile.md)
-- `README.md` chooser rows and compact comparison table
+- `README.md` lifecycle chooser rows and the appropriate layer group in the Solution Snapshot
 - `solutions/README.md`
+- `comparisons/solution-layers.md`
+- `comparisons/capability-matrix.md`
 
 Conditionally required when source-backed and relevant:
 
-- `comparisons/*` pages, such as capability matrix, setup burden, agent access, local vs cloud, or personal vs team
+- `comparisons/*` pages, such as chooser, setup burden, agent access, local vs cloud, or personal vs team
 - `capabilities/*` pages for workflows the solution actually supports
+- Korean mirrors under `ko/` when the solution is part of the main curated set
 
 If a solution does not yet have enough evidence for those decision paths, use a narrower contribution type or do not add it yet.
 

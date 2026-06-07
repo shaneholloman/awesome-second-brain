@@ -8,6 +8,7 @@
 | [지식 정리](auto-organization.md) | 원본 입력이 구조화되고 재사용 가능한 지식이 되는가? |
 | [Memory 발전](dreaming-consolidation.md) | 브레인이 시간이 지나며 개선, 갱신, 중복 제거, 복구되는가? |
 | [검색과 활용](retrieval-grounding.md) | 사람과 AI 도구가 출처, 범위, 최신성 신호와 함께 올바른 맥락을 찾을 수 있는가? |
+| [활용 증거](activation-evidence.md) | 검색된 맥락이 작업 중 로드, 인용, 거절, 쓰기 반영, 실제 활용됐는지 증명할 수 있는가? |
 | [검토와 정정](ui-inspection.md) | 사용자가 브레인이 아는 내용을 확인, 정정, 삭제, 개선할 수 있는가? |
 | [개인/팀 범위](team-workspace-boundaries.md) | 개인, 프로젝트, 팀, 조직 맥락을 분리할 수 있는가? |
 | [프라이버시와 통제권](privacy-control.md) | 사용자가 memory를 내보내거나, self-host하거나, 감사하거나, 경계를 강제할 수 있는가? |

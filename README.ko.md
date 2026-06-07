@@ -98,6 +98,7 @@
 | [Solution Layers](ko/comparisons/solution-layers.md) | 생애주기 빈칸을 고른 뒤 app, workspace, API layer, substrate, platform 형태 이해하기 |
 | [Capability Matrix](ko/comparisons/capability-matrix.md) | 생애주기 지원, 거버넌스, 운영 부담, 활용 채널, 설정 시간 비교 |
 | [Capability Definitions](ko/capabilities/README.md) | 매트릭스 뒤의 평가 축 이해하기 |
+| [Activation Evidence](ko/capabilities/activation-evidence.md) | 검색된 memory가 실제 작업에서 로드, 인용, 거절, 쓰기 반영, 활용됐는지 평가 |
 | [Setup Burden](ko/comparisons/setup-burden.md) | 실제로 무엇을 운영해야 하는지 보기 |
 | [Agent Activation](ko/comparisons/agent-access.md) | MCP, API, SDK, CLI, plugin access를 세컨드 브레인 활용 채널로 비교 |
 | [Local vs Cloud](ko/comparisons/local-vs-cloud.md) | memory가 어디에 있어야 하는지 결정 |
