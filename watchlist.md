@@ -13,6 +13,7 @@ These projects are relevant to AI second-brain architecture but are not yet full
 | Dory | Local-first shared memory daemon for MCP-aware agents. | Emerging local-first second-brain candidate. |
 | Open Second Brain | Obsidian-native memory layer for agents. | Emerging Obsidian/MCP candidate; separate from OpenHuman. |
 | MAGI | Persistent memory for AI agents. | Emerging AI-memory candidate. |
+| [tracecraft](https://github.com/Arrmlet/tracecraft) | Serverless multi-agent coordination substrate using S3-compatible or Hugging Face storage for shared state, task claims, handoffs, and session traces. | Emerging coordination-substrate candidate; adjacent to agent memory but not a memory layer or second-brain system itself. |
 
 ## Promotion Rule
 
